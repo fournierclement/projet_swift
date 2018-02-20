@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46A76636203AE9FD0026D50D /* Fourvierr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fourvierr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A76636203AE9FD0026D50D /* Fourviere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fourviere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A76639203AE9FD0026D50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46A7663B203AE9FD0026D50D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46A7663E203AE9FD0026D50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		46A76643203AE9FD0026D50D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46A76646203AE9FD0026D50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46A76648203AE9FD0026D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46A7664D203AE9FD0026D50D /* FourvierrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourvierrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A7664D203AE9FD0026D50D /* FourviereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourviereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A76651203AE9FD0026D50D /* FourvierrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourvierrTests.swift; sourceTree = "<group>"; };
 		46A76653203AE9FD0026D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46A76658203AE9FD0026D50D /* FourvierrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourvierrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A76658203AE9FD0026D50D /* FourviereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourviereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A7665C203AE9FD0026D50D /* FourvierrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourvierrUITests.swift; sourceTree = "<group>"; };
 		46A7665E203AE9FD0026D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,9 +89,9 @@
 		46A76637203AE9FD0026D50D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46A76636203AE9FD0026D50D /* Fourvierr.app */,
-				46A7664D203AE9FD0026D50D /* FourvierrTests.xctest */,
-				46A76658203AE9FD0026D50D /* FourvierrUITests.xctest */,
+				46A76636203AE9FD0026D50D /* Fourviere.app */,
+				46A7664D203AE9FD0026D50D /* FourviereTests.xctest */,
+				46A76658203AE9FD0026D50D /* FourviereUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		46A76635203AE9FD0026D50D /* Fourvierr */ = {
+		46A76635203AE9FD0026D50D /* Fourviere */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46A76661203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "Fourvierr" */;
+			buildConfigurationList = 46A76661203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "Fourviere" */;
 			buildPhases = (
 				46A76632203AE9FD0026D50D /* Sources */,
 				46A76633203AE9FD0026D50D /* Frameworks */,
@@ -143,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = Fourvierr;
+			name = Fourviere;
 			productName = Fourvierr;
-			productReference = 46A76636203AE9FD0026D50D /* Fourvierr.app */;
+			productReference = 46A76636203AE9FD0026D50D /* Fourviere.app */;
 			productType = "com.apple.product-type.application";
 		};
-		46A7664C203AE9FD0026D50D /* FourvierrTests */ = {
+		46A7664C203AE9FD0026D50D /* FourviereTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46A76664203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "FourvierrTests" */;
+			buildConfigurationList = 46A76664203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "FourviereTests" */;
 			buildPhases = (
 				46A76649203AE9FD0026D50D /* Sources */,
 				46A7664A203AE9FD0026D50D /* Frameworks */,
@@ -161,14 +161,14 @@
 			dependencies = (
 				46A7664F203AE9FD0026D50D /* PBXTargetDependency */,
 			);
-			name = FourvierrTests;
+			name = FourviereTests;
 			productName = FourvierrTests;
-			productReference = 46A7664D203AE9FD0026D50D /* FourvierrTests.xctest */;
+			productReference = 46A7664D203AE9FD0026D50D /* FourviereTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		46A76657203AE9FD0026D50D /* FourvierrUITests */ = {
+		46A76657203AE9FD0026D50D /* FourviereUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46A76667203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "FourvierrUITests" */;
+			buildConfigurationList = 46A76667203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "FourviereUITests" */;
 			buildPhases = (
 				46A76654203AE9FD0026D50D /* Sources */,
 				46A76655203AE9FD0026D50D /* Frameworks */,
@@ -179,9 +179,9 @@
 			dependencies = (
 				46A7665A203AE9FD0026D50D /* PBXTargetDependency */,
 			);
-			name = FourvierrUITests;
+			name = FourviereUITests;
 			productName = FourvierrUITests;
-			productReference = 46A76658203AE9FD0026D50D /* FourvierrUITests.xctest */;
+			productReference = 46A76658203AE9FD0026D50D /* FourviereUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 46A76631203AE9FD0026D50D /* Build configuration list for PBXProject "Fourvierr" */;
+			buildConfigurationList = 46A76631203AE9FD0026D50D /* Build configuration list for PBXProject "Fourviere" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -223,9 +223,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				46A76635203AE9FD0026D50D /* Fourvierr */,
-				46A7664C203AE9FD0026D50D /* FourvierrTests */,
-				46A76657203AE9FD0026D50D /* FourvierrUITests */,
+				46A76635203AE9FD0026D50D /* Fourviere */,
+				46A7664C203AE9FD0026D50D /* FourviereTests */,
+				46A76657203AE9FD0026D50D /* FourviereUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,12 +289,12 @@
 /* Begin PBXTargetDependency section */
 		46A7664F203AE9FD0026D50D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 46A76635203AE9FD0026D50D /* Fourvierr */;
+			target = 46A76635203AE9FD0026D50D /* Fourviere */;
 			targetProxy = 46A7664E203AE9FD0026D50D /* PBXContainerItemProxy */;
 		};
 		46A7665A203AE9FD0026D50D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 46A76635203AE9FD0026D50D /* Fourvierr */;
+			target = 46A76635203AE9FD0026D50D /* Fourviere */;
 			targetProxy = 46A76659203AE9FD0026D50D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -419,8 +419,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fourvierr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = polytechIG.Fourvierr;
+				PRODUCT_BUNDLE_IDENTIFIER = polytechIG.Fourviere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -431,8 +432,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fourvierr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = polytechIG.Fourvierr;
+				PRODUCT_BUNDLE_IDENTIFIER = polytechIG.Fourviere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -448,7 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = polytechIG.FourvierrTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fourvierr.app/Fourvierr";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fourviere.app/Fourviere";
 			};
 			name = Debug;
 		};
@@ -462,7 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = polytechIG.FourvierrTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fourvierr.app/Fourvierr";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fourviere.app/Fourviere";
 			};
 			name = Release;
 		};
@@ -495,7 +497,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46A76631203AE9FD0026D50D /* Build configuration list for PBXProject "Fourvierr" */ = {
+		46A76631203AE9FD0026D50D /* Build configuration list for PBXProject "Fourviere" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46A7665F203AE9FD0026D50D /* Debug */,
@@ -504,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46A76661203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "Fourvierr" */ = {
+		46A76661203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "Fourviere" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46A76662203AE9FD0026D50D /* Debug */,
@@ -512,7 +514,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		46A76664203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "FourvierrTests" */ = {
+		46A76664203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "FourviereTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46A76665203AE9FD0026D50D /* Debug */,
@@ -520,7 +522,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		46A76667203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "FourvierrUITests" */ = {
+		46A76667203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "FourviereUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46A76668203AE9FD0026D50D /* Debug */,
