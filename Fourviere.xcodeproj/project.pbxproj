@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A76639203AE9FD0026D50D /* AppDelegate.swift */; };
-		46A7663C203AE9FD0026D50D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7663B203AE9FD0026D50D /* ViewController.swift */; };
 		46A7663F203AE9FD0026D50D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A7663D203AE9FD0026D50D /* Main.storyboard */; };
 		46A76642203AE9FD0026D50D /* Fourvierr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46A76640203AE9FD0026D50D /* Fourvierr.xcdatamodeld */; };
 		46A76644203AE9FD0026D50D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A76643203AE9FD0026D50D /* Assets.xcassets */; };
 		46A76647203AE9FD0026D50D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A76645203AE9FD0026D50D /* LaunchScreen.storyboard */; };
 		46A76652203AE9FD0026D50D /* FourvierrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A76651203AE9FD0026D50D /* FourvierrTests.swift */; };
 		46A7665D203AE9FD0026D50D /* FourvierrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7665C203AE9FD0026D50D /* FourvierrUITests.swift */; };
+		84766C26205AAF11005633D9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84766C25205AAF11005633D9 /* PageViewController.swift */; };
+		84766C31205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */; };
+		84766C32205AB99D005633D9 /* myAvatar (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C2F205AB99D005633D9 /* myAvatar (1).png */; };
+		84766C33205AB99D005633D9 /* myAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C30205AB99D005633D9 /* myAvatar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		46A76636203AE9FD0026D50D /* Fourviere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fourviere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A76639203AE9FD0026D50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46A7663B203AE9FD0026D50D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46A7663E203AE9FD0026D50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46A76641203AE9FD0026D50D /* Fourvierr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fourvierr.xcdatamodel; sourceTree = "<group>"; };
 		46A76643203AE9FD0026D50D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		46A76658203AE9FD0026D50D /* FourviereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourviereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A7665C203AE9FD0026D50D /* FourvierrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourvierrUITests.swift; sourceTree = "<group>"; };
 		46A7665E203AE9FD0026D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84766C25205AAF11005633D9 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Reseau_Polytech.svg.png; sourceTree = SOURCE_ROOT; };
+		84766C2F205AB99D005633D9 /* myAvatar (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myAvatar (1).png"; sourceTree = SOURCE_ROOT; };
+		84766C30205AB99D005633D9 /* myAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myAvatar.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +105,12 @@
 		46A76638203AE9FD0026D50D /* Fourvierr */ = {
 			isa = PBXGroup;
 			children = (
+				84E46AC220593B5B00EA42A0 /* Controllers */,
 				46A76639203AE9FD0026D50D /* AppDelegate.swift */,
-				46A7663B203AE9FD0026D50D /* ViewController.swift */,
 				46A7663D203AE9FD0026D50D /* Main.storyboard */,
 				46A76643203AE9FD0026D50D /* Assets.xcassets */,
 				46A76645203AE9FD0026D50D /* LaunchScreen.storyboard */,
+				84766C27205AB59F005633D9 /* Images */,
 				46A76648203AE9FD0026D50D /* Info.plist */,
 				46A76640203AE9FD0026D50D /* Fourvierr.xcdatamodeld */,
 			);
@@ -126,6 +133,24 @@
 				46A7665E203AE9FD0026D50D /* Info.plist */,
 			);
 			path = FourvierrUITests;
+			sourceTree = "<group>";
+		};
+		84766C27205AB59F005633D9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */,
+				84766C2F205AB99D005633D9 /* myAvatar (1).png */,
+				84766C30205AB99D005633D9 /* myAvatar.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		84E46AC220593B5B00EA42A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84766C25205AAF11005633D9 /* PageViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A76647203AE9FD0026D50D /* LaunchScreen.storyboard in Resources */,
+				84766C32205AB99D005633D9 /* myAvatar (1).png in Resources */,
+				84766C31205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png in Resources */,
 				46A76644203AE9FD0026D50D /* Assets.xcassets in Resources */,
+				84766C33205AB99D005633D9 /* myAvatar.png in Resources */,
 				46A7663F203AE9FD0026D50D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46A7663C203AE9FD0026D50D /* ViewController.swift in Sources */,
+				84766C26205AAF11005633D9 /* PageViewController.swift in Sources */,
 				46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */,
 				46A76642203AE9FD0026D50D /* Fourvierr.xcdatamodeld in Sources */,
 			);
@@ -513,6 +541,7 @@
 				46A76663203AE9FD0026D50D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46A76664203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "FourviereTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +550,7 @@
 				46A76666203AE9FD0026D50D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46A76667203AE9FD0026D50D /* Build configuration list for PBXNativeTarget "FourviereUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +559,7 @@
 				46A76669203AE9FD0026D50D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
