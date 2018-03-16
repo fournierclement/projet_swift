@@ -15,13 +15,16 @@ class RdvTableCell: UITableViewCell{
 }
 class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var myTable: UITableView!
     let dateTest = ["08-12","09-11", "12-11"]
     let heureTest = ["14h","17h30", "11h"]
     let nomTest = ["Orthophoniste delaré","Dentiste DODO", "Kiné Zitérapete"]
     
+    @IBOutlet weak var dateAujourdhuiLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUIEffects()
         // Do any additional setup after loading the view.
     }
 
@@ -43,5 +46,23 @@ class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.nomLabel?.text = nomTest[indexPath.row]
         return cell
     }
+    
+    private func setUIEffects(){
+        
+        let date = Date()
+        let calendar = Calendar.current
+        dateAujourdhuiLabel.text = String(calendar.component(.day, from: date))
+        myTable.backgroundColor = UIColor.clear
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.view.frame
+        
+        myTable.backgroundView = blurEffectView
+        let vibrancyEffect = UIVibrancyEffect(blurEffect: blurEffect)
+        myTable.separatorEffect = vibrancyEffect
+        
+    }
+    
 
 }

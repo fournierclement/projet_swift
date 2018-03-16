@@ -15,6 +15,7 @@
 		46A76652203AE9FD0026D50D /* FourvierrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A76651203AE9FD0026D50D /* FourvierrTests.swift */; };
 		46A7665D203AE9FD0026D50D /* FourvierrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7665C203AE9FD0026D50D /* FourvierrUITests.swift */; };
 		8460923E205BCA41009FC67D /* MesRDVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460923D205BCA41009FC67D /* MesRDVViewController.swift */; };
+		84609240205BF68D009FC67D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8460923F205BF68D009FC67D /* calendar.png */; };
 		84766C26205AAF11005633D9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84766C25205AAF11005633D9 /* PageViewController.swift */; };
 		84766C31205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */; };
 		84766C32205AB99D005633D9 /* myAvatar (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C2F205AB99D005633D9 /* myAvatar (1).png */; };
@@ -53,6 +54,7 @@
 		46A7665C203AE9FD0026D50D /* FourvierrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourvierrUITests.swift; sourceTree = "<group>"; };
 		46A7665E203AE9FD0026D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8460923D205BCA41009FC67D /* MesRDVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MesRDVViewController.swift; sourceTree = "<group>"; };
+		8460923F205BF68D009FC67D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = SOURCE_ROOT; };
 		84766C25205AAF11005633D9 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Reseau_Polytech.svg.png; sourceTree = SOURCE_ROOT; };
 		84766C2F205AB99D005633D9 /* myAvatar (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myAvatar (1).png"; sourceTree = SOURCE_ROOT; };
@@ -140,6 +142,7 @@
 		84766C27205AB59F005633D9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8460923F205BF68D009FC67D /* calendar.png */,
 				84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */,
 				84766C2F205AB99D005633D9 /* myAvatar (1).png */,
 				84766C30205AB99D005633D9 /* myAvatar.png */,
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84609240205BF68D009FC67D /* calendar.png in Resources */,
 				46A76647203AE9FD0026D50D /* LaunchScreen.storyboard in Resources */,
 				84766C32205AB99D005633D9 /* myAvatar (1).png in Resources */,
 				84766C31205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png in Resources */,

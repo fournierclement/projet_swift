@@ -43,13 +43,13 @@
                                     <constraint firstAttribute="width" secondItem="bdX-ou-SUb" secondAttribute="height" multiplier="243:247" id="jgN-ql-9Kk"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="C. Fournier" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QF4-wu-IMa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C. Fournier" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QF4-wu-IMa">
                                 <rect key="frame" x="59" y="417" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="T. Rivière" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dra-cJ-qMf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T. Rivière" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dra-cJ-qMf">
                                 <rect key="frame" x="239" y="417" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,6 +66,7 @@
                         <constraints>
                             <constraint firstItem="yCJ-ik-19X" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="10" id="1fE-qR-Olu"/>
                             <constraint firstItem="Dra-cJ-qMf" firstAttribute="top" secondItem="eRt-4l-yJU" secondAttribute="bottom" constant="8" id="Ej4-y5-PWu"/>
+                            <constraint firstItem="QF4-wu-IMa" firstAttribute="centerX" secondItem="yCJ-ik-19X" secondAttribute="centerX" id="L9q-su-aOK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bdX-ou-SUb" secondAttribute="trailing" constant="100" id="N35-ka-bl1"/>
                             <constraint firstItem="bdX-ou-SUb" firstAttribute="top" secondItem="Dvk-Zl-ldG" secondAttribute="bottom" constant="8" id="QmJ-RO-4kE"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="bdX-ou-SUb" secondAttribute="bottom" constant="30" id="Vf6-Kk-diO"/>
@@ -74,6 +75,7 @@
                             <constraint firstItem="bdX-ou-SUb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="100" id="kMT-tv-UaF"/>
                             <constraint firstItem="Dvk-Zl-ldG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="p2C-fc-inl"/>
                             <constraint firstItem="yCJ-ik-19X" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="pyN-iL-8LU"/>
+                            <constraint firstItem="Dra-cJ-qMf" firstAttribute="centerX" secondItem="eRt-4l-yJU" secondAttribute="centerX" id="w3t-Yg-cnq"/>
                             <constraint firstItem="eRt-4l-yJU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ysI-nF-Q8H"/>
                         </constraints>
                     </view>
