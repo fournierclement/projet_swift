@@ -20,6 +20,10 @@
 		84766C31205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */; };
 		84766C32205AB99D005633D9 /* myAvatar (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C2F205AB99D005633D9 /* myAvatar (1).png */; };
 		84766C33205AB99D005633D9 /* myAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C30205AB99D005633D9 /* myAvatar.png */; };
+		B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */; };
+		B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4C206122C200C779E1 /* MenuController.swift */; };
+		B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4E2061231E00C779E1 /* InfoController.swift */; };
+		B18C3D512061300500C779E1 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = B18C3D502061300500C779E1 /* add.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Reseau_Polytech.svg.png; sourceTree = SOURCE_ROOT; };
 		84766C2F205AB99D005633D9 /* myAvatar (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myAvatar (1).png"; sourceTree = SOURCE_ROOT; };
 		84766C30205AB99D005633D9 /* myAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myAvatar.png; sourceTree = SOURCE_ROOT; };
+		B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjoutRDVController.swift; sourceTree = "<group>"; };
+		B18C3D4C206122C200C779E1 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		B18C3D4E2061231E00C779E1 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
+		B18C3D502061300500C779E1 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,7 @@
 		84766C27205AB59F005633D9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B18C3D502061300500C779E1 /* add.png */,
 				8460923F205BF68D009FC67D /* calendar.png */,
 				84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */,
 				84766C2F205AB99D005633D9 /* myAvatar (1).png */,
@@ -155,6 +164,9 @@
 			children = (
 				84766C25205AAF11005633D9 /* PageViewController.swift */,
 				8460923D205BCA41009FC67D /* MesRDVViewController.swift */,
+				B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */,
+				B18C3D4C206122C200C779E1 /* MenuController.swift */,
+				B18C3D4E2061231E00C779E1 /* InfoController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -269,6 +281,7 @@
 				84609240205BF68D009FC67D /* calendar.png in Resources */,
 				46A76647203AE9FD0026D50D /* LaunchScreen.storyboard in Resources */,
 				84766C32205AB99D005633D9 /* myAvatar (1).png in Resources */,
+				B18C3D512061300500C779E1 /* add.png in Resources */,
 				84766C31205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png in Resources */,
 				46A76644203AE9FD0026D50D /* Assets.xcassets in Resources */,
 				84766C33205AB99D005633D9 /* myAvatar.png in Resources */,
@@ -298,6 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84766C26205AAF11005633D9 /* PageViewController.swift in Sources */,
+				B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */,
+				B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */,
+				B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */,
 				8460923E205BCA41009FC67D /* MesRDVViewController.swift in Sources */,
 				46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */,
 				46A76642203AE9FD0026D50D /* Fourvierr.xcdatamodeld in Sources */,
