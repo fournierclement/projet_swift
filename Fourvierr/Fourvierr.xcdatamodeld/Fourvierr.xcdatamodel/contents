@@ -49,4 +49,6 @@
         <element name="Profession" positionX="2086" positionY="-3745" width="128" height="73"/>
         <element name="Course" positionX="1674" positionY="-3312" width="128" height="73"/>
     </elements>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <elements/>
 </model>

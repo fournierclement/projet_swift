@@ -28,6 +28,7 @@
 		B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4C206122C200C779E1 /* MenuController.swift */; };
 		B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4E2061231E00C779E1 /* InfoController.swift */; };
 		B18C3D512061300500C779E1 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = B18C3D502061300500C779E1 /* add.png */; };
+		B1BF5E562062965200BB1390 /* AjoutMedecinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BF5E552062965200BB1390 /* AjoutMedecinController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		B18C3D4C206122C200C779E1 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		B18C3D4E2061231E00C779E1 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
 		B18C3D502061300500C779E1 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = SOURCE_ROOT; };
+		B1BF5E552062965200BB1390 /* AjoutMedecinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjoutMedecinController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */,
 				B18C3D4C206122C200C779E1 /* MenuController.swift */,
 				B18C3D4E2061231E00C779E1 /* InfoController.swift */,
+				B1BF5E552062965200BB1390 /* AjoutMedecinController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -270,7 +273,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = polytechIG;
 				TargetAttributes = {
 					46A76635203AE9FD0026D50D = {
@@ -349,6 +352,7 @@
 				84766C26205AAF11005633D9 /* PageViewController.swift in Sources */,
 				B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */,
 				B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */,
+				B1BF5E562062965200BB1390 /* AjoutMedecinController.swift in Sources */,
 				B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */,
 				8460923E205BCA41009FC67D /* MesRDVViewController.swift in Sources */,
 				0BE96F2C2061222F0088A3AF /* AbstractFactory.swift in Sources */,
@@ -421,9 +425,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -431,11 +433,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -478,9 +476,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -488,11 +484,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

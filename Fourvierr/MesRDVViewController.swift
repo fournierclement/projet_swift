@@ -52,6 +52,8 @@ class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let date = Date()
         let calendar = Calendar.current
         dateAujourdhuiLabel.text = String(calendar.component(.day, from: date))
+        
+        
         myTable.backgroundColor = UIColor.clear
         
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)

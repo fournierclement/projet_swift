@@ -8,24 +8,22 @@
 
 import UIKit
 
-class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
-    
-    
-    @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var medecinPicker: UIPickerView!
+class AjoutMedecinController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
 
-    var pickerData: [String] = ["Jean Prensouin", "Jay malisi", "Dan tiste", "Mark monpoi"]
     
+    var pickerData: [String] = ["Neurologue","Kinesieterapeute","Generaliste"]
+    
+    @IBOutlet weak var spePicker: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.medecinPicker.delegate = self
-        self.medecinPicker.dataSource = self
+        self.spePicker.delegate = self
+        self.spePicker.dataSource = self
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         self.navigationController?.isNavigationBarHidden = false
     }
-
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -43,5 +41,5 @@ class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerView
         
     }
     
-
+    
 }
