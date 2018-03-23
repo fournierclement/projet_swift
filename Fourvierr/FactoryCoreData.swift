@@ -10,10 +10,10 @@ import Foundation
 
 class FactoryCoreData: AbstractFactory {
     var doctorDAO: DoctorDAO
-    init(){
+    override init(){
         self.doctorDAO = DoctorCoreDataDAO()
     }
     override func getDoctorDAO() -> DoctorDAO {
-        
+        return self.doctorDAO
     }
 }

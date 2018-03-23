@@ -8,10 +8,10 @@
 
 import Foundation
 
-class DoctorDataCoreDAO: DoctorDAO {
+class DoctorCoreDataDAO: DoctorDAO {
     override init() {
     }
     override func getDoctor() -> Doctor {
-        <#code#>
+        return Doctor();
     }
 }
