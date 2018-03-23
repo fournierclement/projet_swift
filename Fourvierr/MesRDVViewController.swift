@@ -63,6 +63,10 @@ class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDa
         myTable.separatorEffect = vibrancyEffect
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        self.navigationController?.isNavigationBarHidden = true
+    }
     
 
 }

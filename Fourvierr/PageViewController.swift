@@ -12,6 +12,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 
     lazy var orderedViewControllers: [UIViewController] = {
         return [self.newVc(viewController: "mesRDVPage"),
+                self.newVc(viewController: "parametrePage"),
+                self.newVc(viewController: "parametrePage"),
                 self.newVc(viewController: "parametrePage")]
     }()
     var pageControl = UIPageControl()
@@ -30,6 +32,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 
         self.delegate = self
         configurePageControl()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,5 +99,6 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         let pageContentViewController = pageViewController.viewControllers![0]
         self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
     }
+    
 
 }
