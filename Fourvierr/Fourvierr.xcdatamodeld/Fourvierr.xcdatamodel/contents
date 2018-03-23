@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Doctor" representedClassName="Doctor" syncable="YES" codeGenerationType="class">
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="practice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Profession" inverseName="is_practiced" inverseEntity="Profession" syncable="YES"/>
+        <relationship name="prefixed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gender" inverseName="qualify" inverseEntity="Gender" syncable="YES"/>
+    </entity>
+    <entity name="Gender" representedClassName="Gender" syncable="YES" codeGenerationType="class">
+        <attribute name="gender_label" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="qualify" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Doctor" inverseName="prefixed" inverseEntity="Doctor" syncable="YES"/>
+        <userInfo>
+            <entry key="key" value="value"/>
+        </userInfo>
+    </entity>
+    <entity name="Medecine" representedClassName="Medecine" syncable="YES" codeGenerationType="class"/>
+    <entity name="Profession" representedClassName="Profession" syncable="YES" codeGenerationType="class">
+        <attribute name="profession_label" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="is_practiced" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Doctor" inverseName="practice" inverseEntity="Doctor" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Doctor" positionX="-270" positionY="-99" width="117" height="88"/>
+        <element name="Profession" positionX="-20" positionY="-81" width="128" height="73"/>
+        <element name="Gender" positionX="-182" positionY="39" width="128" height="73"/>
+        <element name="Medecine" positionX="-117" positionY="18" width="128" height="45"/>
+    </elements>
 </model>

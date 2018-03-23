@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BE96F27206120BD0088A3AF /* Medecine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F24206120BD0088A3AF /* Medecine.swift */; };
+		0BE96F28206120BD0088A3AF /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F25206120BD0088A3AF /* Doctor.swift */; };
+		0BE96F29206120BD0088A3AF /* PhysicalEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F26206120BD0088A3AF /* PhysicalEx.swift */; };
+		0BE96F2C2061222F0088A3AF /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F2B2061222F0088A3AF /* AbstractFactory.swift */; };
+		0BE96F2E206125D40088A3AF /* FactoryCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F2D206125D40088A3AF /* FactoryCoreData.swift */; };
+		0BE96F31206129040088A3AF /* DoctorDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F30206129040088A3AF /* DoctorDAO.swift */; };
+		0BE96F3320612B900088A3AF /* DoctorDataCoreDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F3220612B900088A3AF /* DoctorDataCoreDAO.swift */; };
 		46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A76639203AE9FD0026D50D /* AppDelegate.swift */; };
 		46A7663F203AE9FD0026D50D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A7663D203AE9FD0026D50D /* Main.storyboard */; };
 		46A76642203AE9FD0026D50D /* Fourvierr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46A76640203AE9FD0026D50D /* Fourvierr.xcdatamodeld */; };
@@ -40,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BE96F24206120BD0088A3AF /* Medecine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medecine.swift; sourceTree = "<group>"; };
+		0BE96F25206120BD0088A3AF /* Doctor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		0BE96F26206120BD0088A3AF /* PhysicalEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalEx.swift; sourceTree = "<group>"; };
+		0BE96F2B2061222F0088A3AF /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		0BE96F2D206125D40088A3AF /* FactoryCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryCoreData.swift; sourceTree = "<group>"; };
+		0BE96F30206129040088A3AF /* DoctorDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDAO.swift; sourceTree = "<group>"; };
+		0BE96F3220612B900088A3AF /* DoctorDataCoreDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDataCoreDAO.swift; sourceTree = "<group>"; };
 		46A76636203AE9FD0026D50D /* Fourviere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fourviere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A76639203AE9FD0026D50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46A7663E203AE9FD0026D50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +100,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BE96F23206120A50088A3AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BE96F25206120BD0088A3AF /* Doctor.swift */,
+				0BE96F26206120BD0088A3AF /* PhysicalEx.swift */,
+				0BE96F24206120BD0088A3AF /* Medecine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BE96F2A206121F90088A3AF /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				0BE96F2B2061222F0088A3AF /* AbstractFactory.swift */,
+				0BE96F30206129040088A3AF /* DoctorDAO.swift */,
+			);
+			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		0BE96F2F206128E20088A3AF /* CoreDataFactory */ = {
+			isa = PBXGroup;
+			children = (
+				0BE96F2D206125D40088A3AF /* FactoryCoreData.swift */,
+				0BE96F3220612B900088A3AF /* DoctorDataCoreDAO.swift */,
+			);
+			name = CoreDataFactory;
+			sourceTree = "<group>";
+		};
 		46A7662D203AE9FD0026D50D = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +151,9 @@
 		46A76638203AE9FD0026D50D /* Fourvierr */ = {
 			isa = PBXGroup;
 			children = (
+				0BE96F2F206128E20088A3AF /* CoreDataFactory */,
+				0BE96F2A206121F90088A3AF /* AbstractFactory */,
+				0BE96F23206120A50088A3AF /* Model */,
 				84E46AC220593B5B00EA42A0 /* Controllers */,
 				46A76639203AE9FD0026D50D /* AppDelegate.swift */,
 				46A7663D203AE9FD0026D50D /* Main.storyboard */,
@@ -298,9 +343,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				84766C26205AAF11005633D9 /* PageViewController.swift in Sources */,
+				0BE96F29206120BD0088A3AF /* PhysicalEx.swift in Sources */,
 				8460923E205BCA41009FC67D /* MesRDVViewController.swift in Sources */,
+				0BE96F28206120BD0088A3AF /* Doctor.swift in Sources */,
+				0BE96F2C2061222F0088A3AF /* AbstractFactory.swift in Sources */,
 				46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */,
+				0BE96F27206120BD0088A3AF /* Medecine.swift in Sources */,
+				0BE96F3320612B900088A3AF /* DoctorDataCoreDAO.swift in Sources */,
+				0BE96F31206129040088A3AF /* DoctorDAO.swift in Sources */,
 				46A76642203AE9FD0026D50D /* Fourvierr.xcdatamodeld in Sources */,
+				0BE96F2E206125D40088A3AF /* FactoryCoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

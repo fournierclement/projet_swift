@@ -9,24 +9,18 @@
 import Foundation
 
 class Doctor {
-    var firstname: String
     var lastname: String
-    var city: String
-    var zipcode: Int
-    var street: String
+    var doctorDAO: DoctorDAO
     
-    init(firstname:String, lastname:String, city:String, zipcode: Int, street: String ) {
-        self.firstname=firstname
-        self.lastname=lastname
-        self.city=city
-        self.zipcode=zipcode
-        self.street=street
-    }
-    var fullname: String {
-        return self.firstname + " " + self.lastname;
+    var firstname: String?
+    var city: String?
+    var zipcode: Int?
+    var street: String?
+    // var type: enum
+    
+    init(lastname:String) {
+        self.lastname = lastname
+        self.doctorDAO = AbstractFactory.factory.getDoctorDAO()
     }
     
-    var address: String {
-        return self.street + "\n" + String(self.zipcode) + " " + self.city
-    }
 }
