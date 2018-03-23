@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0BE96F27206120BD0088A3AF /* Medecine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F24206120BD0088A3AF /* Medecine.swift */; };
-		0BE96F28206120BD0088A3AF /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F25206120BD0088A3AF /* Doctor.swift */; };
 		0BE96F29206120BD0088A3AF /* PhysicalEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F26206120BD0088A3AF /* PhysicalEx.swift */; };
 		0BE96F2C2061222F0088A3AF /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F2B2061222F0088A3AF /* AbstractFactory.swift */; };
 		0BE96F2E206125D40088A3AF /* FactoryCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE96F2D206125D40088A3AF /* FactoryCoreData.swift */; };
@@ -52,7 +51,6 @@
 
 /* Begin PBXFileReference section */
 		0BE96F24206120BD0088A3AF /* Medecine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medecine.swift; sourceTree = "<group>"; };
-		0BE96F25206120BD0088A3AF /* Doctor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		0BE96F26206120BD0088A3AF /* PhysicalEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalEx.swift; sourceTree = "<group>"; };
 		0BE96F2B2061222F0088A3AF /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		0BE96F2D206125D40088A3AF /* FactoryCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryCoreData.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 		0BE96F23206120A50088A3AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0BE96F25206120BD0088A3AF /* Doctor.swift */,
 				0BE96F26206120BD0088A3AF /* PhysicalEx.swift */,
 				0BE96F24206120BD0088A3AF /* Medecine.swift */,
 			);
@@ -356,9 +353,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84766C26205AAF11005633D9 /* PageViewController.swift in Sources */,
+				B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */,
+				B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */,
+				B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */,
 				0BE96F29206120BD0088A3AF /* PhysicalEx.swift in Sources */,
 				8460923E205BCA41009FC67D /* MesRDVViewController.swift in Sources */,
-				0BE96F28206120BD0088A3AF /* Doctor.swift in Sources */,
 				0BE96F2C2061222F0088A3AF /* AbstractFactory.swift in Sources */,
 				46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */,
 				0BE96F27206120BD0088A3AF /* Medecine.swift in Sources */,
