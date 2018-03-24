@@ -8,14 +8,26 @@
 
 import UIKit
 
+//Todo : return true si un rdv de neurologue bientot, false sinon.
+func rdvNeurologueBientot()-> Bool{
+    return false
+}
 class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
 
     lazy var orderedViewControllers: [UIViewController] = {
-        return [self.newVc(viewController: "mesRDVPage"),
-                self.newVc(viewController: "medocsPage"),
-                self.newVc(viewController: "parametrePage"),
+        if(rdvNeurologueBientot() ){
+        return [self.newVc(viewController: "parametrePage"),
                 self.newVc(viewController: "parametrePage")]
+        }
+        else{
+            return [self.newVc(viewController: "mesRDVPage"),
+                    self.newVc(viewController: "medocsPage"),
+                    self.newVc(viewController: "parametrePage"),
+                    self.newVc(viewController: "parametrePage")]
+        }
     }()
+
+    
     var pageControl = UIPageControl()
     
     override func viewDidLoad() {
@@ -99,6 +111,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         let pageContentViewController = pageViewController.viewControllers![0]
         self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
     }
+
     
 
 }
