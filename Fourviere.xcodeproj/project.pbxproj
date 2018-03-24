@@ -29,6 +29,7 @@
 		84C25A5A2066851E0060FC7D /* wallpaper2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C25A572066851E0060FC7D /* wallpaper2.jpg */; };
 		84C25A5B2066851E0060FC7D /* wallpaper3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C25A582066851E0060FC7D /* wallpaper3.jpg */; };
 		84C25A5C2066851E0060FC7D /* wallpaper4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C25A592066851E0060FC7D /* wallpaper4.jpg */; };
+		84C25A5E2066934D0060FC7D /* AjoutTraitementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C25A5D2066934D0060FC7D /* AjoutTraitementController.swift */; };
 		B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */; };
 		B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4C206122C200C779E1 /* MenuController.swift */; };
 		B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4E2061231E00C779E1 /* InfoController.swift */; };
@@ -82,6 +83,7 @@
 		84C25A572066851E0060FC7D /* wallpaper2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper2.jpg; sourceTree = SOURCE_ROOT; };
 		84C25A582066851E0060FC7D /* wallpaper3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper3.jpg; sourceTree = SOURCE_ROOT; };
 		84C25A592066851E0060FC7D /* wallpaper4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper4.jpg; sourceTree = SOURCE_ROOT; };
+		84C25A5D2066934D0060FC7D /* AjoutTraitementController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjoutTraitementController.swift; sourceTree = "<group>"; };
 		B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjoutRDVController.swift; sourceTree = "<group>"; };
 		B18C3D4C206122C200C779E1 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		B18C3D4E2061231E00C779E1 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				B18C3D4E2061231E00C779E1 /* InfoController.swift */,
 				B1BF5E552062965200BB1390 /* AjoutMedecinController.swift */,
 				84C25A5520667B4B0060FC7D /* MedocsController.swift */,
+				84C25A5D2066934D0060FC7D /* AjoutTraitementController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				8460923E205BCA41009FC67D /* MesRDVViewController.swift in Sources */,
 				0BE96F2C2061222F0088A3AF /* AbstractFactory.swift in Sources */,
 				46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */,
+				84C25A5E2066934D0060FC7D /* AjoutTraitementController.swift in Sources */,
 				84C25A5620667B4B0060FC7D /* MedocsController.swift in Sources */,
 				0BE96F3320612B900088A3AF /* DoctorDataCoreDAO.swift in Sources */,
 				0BE96F31206129040088A3AF /* DoctorDAO.swift in Sources */,
