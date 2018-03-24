@@ -30,7 +30,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="fIy-f6-l9f">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="fIy-f6-l9f">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mes Rendez Vous" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yw-C1-ws7">
@@ -92,7 +92,6 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="DateLabel" destination="bVS-Qq-1ZR" id="mOJ-8f-oux"/>
                                             <outlet property="dateLabel" destination="bVS-Qq-1ZR" id="qDB-U2-Qmo"/>
                                             <outlet property="heureLabel" destination="6DC-1B-Y4t" id="K9D-tv-Sn6"/>
                                             <outlet property="nomLabel" destination="pq8-4i-1aJ" id="CTY-I1-IVI"/>
@@ -176,7 +175,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="5KV-KI-vAg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5KV-KI-vAg">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8PB-eV-jqI">
@@ -291,7 +290,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="wNx-jc-Dxp">
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wNx-jc-Dxp">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3F-19-nVT">
@@ -422,7 +421,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="eTx-Hf-lcz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="eTx-Hf-lcz">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fd-vZ-kTf">
@@ -584,7 +583,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="ocu-PE-vJY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="ocu-PE-vJY">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0f-ZF-jRh">
@@ -742,7 +741,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="X3a-Fp-1uw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="X3a-Fp-1uw">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon traitement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6u-KX-yV6">
@@ -759,7 +758,7 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.2051871827" green="0.2051871827" blue="0.2051871827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rdvCell" id="FcT-lQ-pB9" customClass="MedocsTableCell" customModule="Fourviere" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="medocCell" id="FcT-lQ-pB9" userLabel="medocCell" customClass="MedocsTableCell" customModule="Fourviere" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FcT-lQ-pB9" id="0vM-2a-t4K">
@@ -767,24 +766,24 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-99-IOV">
-                                                    <rect key="frame" x="12" y="4" width="100" height="19"/>
+                                                    <rect key="frame" x="12" y="4" width="80" height="19"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="OGV-h9-nMa"/>
+                                                        <constraint firstAttribute="width" constant="80" id="OGV-h9-nMa"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom médicament" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvN-vg-SVu">
-                                                    <rect key="frame" x="132" y="12" width="228" height="20"/>
+                                                    <rect key="frame" x="112" y="12" width="248" height="20"/>
                                                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantitée" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGY-GT-xJH">
-                                                    <rect key="frame" x="12" y="21" width="100" height="18"/>
+                                                    <rect key="frame" x="12" y="21" width="80" height="18"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="7cz-nD-n2e"/>
+                                                        <constraint firstAttribute="width" constant="80" id="7cz-nD-n2e"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Verdana-Italic" family="Verdana" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -804,16 +803,15 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="DateLabel" destination="fzX-99-IOV" id="tbM-0D-Qfr"/>
-                                            <outlet property="dateLabel" destination="fzX-99-IOV" id="6t8-R9-ePz"/>
-                                            <outlet property="heureLabel" destination="fzX-99-IOV" id="XVF-9y-5cz"/>
-                                            <outlet property="nomLabel" destination="xvN-vg-SVu" id="E5s-v6-Vdb"/>
+                                            <outlet property="heureLabel" destination="fzX-99-IOV" id="qzw-a0-D5A"/>
+                                            <outlet property="medLabel" destination="xvN-vg-SVu" id="eFA-zg-FHh"/>
+                                            <outlet property="qttLabel" destination="PGY-GT-xJH" id="pdH-rM-hHs"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="pq5-re-Asp" id="UKV-dm-Imw"/>
-                                    <outlet property="delegate" destination="pq5-re-Asp" id="WcR-4a-jef"/>
+                                    <outlet property="dataSource" destination="pq5-re-Asp" id="srG-26-9JW"/>
+                                    <outlet property="delegate" destination="pq5-re-Asp" id="X8h-Nu-Rdu"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="90S-fw-y5b">
@@ -857,12 +855,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="fg0-ti-1yD"/>
                     <connections>
-                        <outlet property="myTable" destination="UwM-0y-RAC" id="Lhh-nm-sbD"/>
+                        <outlet property="myTable" destination="UwM-0y-RAC" id="OR7-ro-cYW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHe-Bl-k42" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3751" y="47"/>
+            <point key="canvasLocation" x="3750.7246376811595" y="46.467391304347828"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oVI-Vc-7aJ">
@@ -888,5 +886,7 @@
         <image name="add.png" width="32" height="32"/>
         <image name="calendar.png" width="512" height="512"/>
         <image name="wallpaper" width="1920" height="1080"/>
+        <image name="wallpaper3.jpg" width="1920" height="1080"/>
+        <image name="wallpaper4.jpg" width="1366" height="768"/>
     </resources>
 </document>

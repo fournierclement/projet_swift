@@ -12,7 +12,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 
     lazy var orderedViewControllers: [UIViewController] = {
         return [self.newVc(viewController: "mesRDVPage"),
-                self.newVc(viewController: "parametrePage"),
+                self.newVc(viewController: "medocsPage"),
                 self.newVc(viewController: "parametrePage"),
                 self.newVc(viewController: "parametrePage")]
     }()

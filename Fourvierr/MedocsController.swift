@@ -10,17 +10,19 @@ import UIKit
 
 class MedocsTableCell: UITableViewCell{
     
+    @IBOutlet weak var heureLabel: UILabel!
+    @IBOutlet weak var qttLabel: UILabel!
+    @IBOutlet weak var medLabel: UILabel!
 }
 
 class MedocsController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet weak var myTable: UITableView!
-    let dateTest = ["08-12","09-11", "12-11"]
+    let qttTest = ["1 comprimé","2 cuillère", "5 piqure"]
     let heureTest = ["14h","17h30", "11h"]
-    let nomTest = ["Orthophoniste delaré","Dentiste DODO", "Kiné Zitérapete"]
+    let nomTest = ["Nespresso to cure my depresso", "Xanax 1000", "Oublipa pills 200"]
     
-    @IBOutlet weak var dateAujourdhuiLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,21 +41,15 @@ class MedocsController: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "medocCell", for: indexPath) as! RdvTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "medocCell", for: indexPath) as! MedocsTableCell
         
         cell.heureLabel?.text = heureTest[indexPath.row]
-        cell.dateLabel?.text = dateTest[indexPath.row]
-        cell.nomLabel?.text = nomTest[indexPath.row]
+        cell.qttLabel?.text = qttTest[indexPath.row]
+        cell.medLabel?.text = nomTest[indexPath.row]
         return cell
     }
     
     private func setUIEffects(){
-        
-        let date = Date()
-        let calendar = Calendar.current
-        dateAujourdhuiLabel.text = String(calendar.component(.day, from: date))
-        
-        
         myTable.backgroundColor = UIColor.clear
         
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
