@@ -12,6 +12,15 @@ import CoreData
 class DoctorDAO {
     static let request : NSFetchRequest<DoctorDTO> = DoctorDTO.fetchRequest()
     
+    // MARK: - Doctor Initialization
+    
+    static func initialize () {
+        Doctor(lastName: "Smith", speciality: Speciality(label: "Neurologue"), firstName: "Jean", phoneNumber:"00", address:"here")
+        Doctor(lastName: "Dude", speciality: Speciality(label: "Psychiatre"), firstName: "John", phoneNumber:"01", address:"there")
+    }
+    
+    // MARK: - Doctor Functions
+    
     static func search (lastName: String, speciality: Speciality) -> DoctorDTO? {
         self.request.predicate = NSPredicate(format: "lastName == %@ AND practices.label == %@", lastName, speciality.label )
         do{
@@ -28,7 +37,7 @@ class DoctorDAO {
     static func create (lastName: String, speciality: Speciality, firstName: String?, phoneNumber: String?, address: String?) -> DoctorDTO {
         let dto = DoctorDTO(context: CoreDataManager.context);
         dto.lastName = lastName
-        dto.setValue(SpecialityDAO.search(label: speciality.label), forKey: "practices")
+        dto.setValue(speciality.dto, forKey: "practices")
         dto.firstName = firstName
         dto.address = address
         dto.phoneNumber = phoneNumber
@@ -37,6 +46,9 @@ class DoctorDAO {
     
     static func getAll() -> [Doctor]? {
         self.request.predicate = nil
+        let sort1 = NSSortDescriptor(key:"practices.label", ascending: true)
+        let sort2 = NSSortDescriptor(key:"lastName", ascending: true)
+        self.request.sortDescriptors = [sort1, sort2]
         do{
             let DoctorsDTO = try CoreDataManager.context.fetch(self.request)
             return DoctorsDTO.map { Doctor(dto:$0)}

@@ -10,6 +10,8 @@
 		0B2870EC2067865700F822B1 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2870EB2067865700F822B1 /* Doctor.swift */; };
 		0B2870EF20678E7300F822B1 /* DoctorDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2870EE20678E7300F822B1 /* DoctorDAO.swift */; };
 		0B2870F120678E9200F822B1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2870F020678E9200F822B1 /* CoreDataManager.swift */; };
+		0B642B682067CC290093B028 /* AppointmentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B672067CC290093B028 /* AppointmentDAO.swift */; };
+		0B642B6A2067CDD80093B028 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B692067CDD80093B028 /* Appointment.swift */; };
 		0B9B1E22206795E900601E50 /* SpecialityDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B1E21206795E900601E50 /* SpecialityDAO.swift */; };
 		0B9B1E242067965A00601E50 /* Speciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B1E232067965A00601E50 /* Speciality.swift */; };
 		46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A76639203AE9FD0026D50D /* AppDelegate.swift */; };
@@ -59,6 +61,8 @@
 		0B2870EB2067865700F822B1 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		0B2870EE20678E7300F822B1 /* DoctorDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorDAO.swift; path = Fourvierr/DAO/DoctorDAO.swift; sourceTree = SOURCE_ROOT; };
 		0B2870F020678E9200F822B1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0B642B672067CC290093B028 /* AppointmentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDAO.swift; sourceTree = "<group>"; };
+		0B642B692067CDD80093B028 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		0B9B1E21206795E900601E50 /* SpecialityDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialityDAO.swift; sourceTree = "<group>"; };
 		0B9B1E232067965A00601E50 /* Speciality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speciality.swift; sourceTree = "<group>"; };
 		46A76636203AE9FD0026D50D /* Fourviere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fourviere.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +135,7 @@
 			children = (
 				0B2870EB2067865700F822B1 /* Doctor.swift */,
 				0B9B1E232067965A00601E50 /* Speciality.swift */,
+				0B642B692067CDD80093B028 /* Appointment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 		0BE96F2A206121F90088A3AF /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				0B642B672067CC290093B028 /* AppointmentDAO.swift */,
 				0B2870EE20678E7300F822B1 /* DoctorDAO.swift */,
 				0B9B1E21206795E900601E50 /* SpecialityDAO.swift */,
 			);
@@ -376,6 +382,7 @@
 			files = (
 				84766C26205AAF11005633D9 /* PageViewController.swift in Sources */,
 				0B2870EF20678E7300F822B1 /* DoctorDAO.swift in Sources */,
+				0B642B682067CC290093B028 /* AppointmentDAO.swift in Sources */,
 				B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */,
 				0B9B1E22206795E900601E50 /* SpecialityDAO.swift in Sources */,
 				0B2870EC2067865700F822B1 /* Doctor.swift in Sources */,
@@ -388,6 +395,7 @@
 				46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */,
 				84C25A5E2066934D0060FC7D /* AjoutTraitementController.swift in Sources */,
 				84C25A5620667B4B0060FC7D /* MedocsController.swift in Sources */,
+				0B642B6A2067CDD80093B028 /* Appointment.swift in Sources */,
 				46A76642203AE9FD0026D50D /* Fourvierr.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,11 +10,14 @@ import UIKit
 
 class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
     
+    // MARK: - outlets & var
     
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var medecinPicker: UIPickerView!
 
     var doctors: [Doctor] = []
+    
+    // MARK: - view control
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +29,28 @@ class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerView
         super.viewWillAppear(animated);
         self.navigationController?.isNavigationBarHidden = false
     }
-
+    // MARK: - Navigation
+    
+    let appointmentValidationSegue = "appointmentValidationSegue"
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == appointmentValidationSegue {
+            guard (addAppointment() != nil) else {
+                return false
+            }
+        }
+        return true
+    }
+    
+    // MARK: - Actions & functions
+    
+    func addAppointment() -> Appointment? {
+        let date = datePicker.date
+        let doctor = doctors[medecinPicker.selectedRow(inComponent: 0)]
+        return Appointment(date: date, doctor: doctor)
+    }
+    
+    // MARK: - Picker functions
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

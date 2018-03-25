@@ -14,6 +14,7 @@ class Doctor{
     internal init(dto: DoctorDTO){
         self.dto = dto
     }
+    @discardableResult
     init(lastName: String, speciality: Speciality, firstName: String?, phoneNumber: String?, address: String?) {
         if let dto = DoctorDAO.search(lastName: lastName, speciality: speciality) {
             self.dto = dto
@@ -21,6 +22,15 @@ class Doctor{
             self.dto = DoctorDAO.create(lastName: lastName, speciality: speciality, firstName: firstName, phoneNumber: phoneNumber, address: address)
         }
     }
+    
+    init(lastName: String, speciality: Speciality){
+        if let dto = DoctorDAO.search(lastName: lastName, speciality: speciality) {
+            self.dto = dto
+        } else {
+            self.dto = DoctorDAO.create(lastName: lastName, speciality: speciality, firstName: nil, phoneNumber: nil, address: nil)
+        }
+    }
+    
     var lastName : String {
         return self.dto.lastName!
     }

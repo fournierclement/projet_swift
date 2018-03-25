@@ -10,11 +10,9 @@ import UIKit
 
 class AjoutMedecinController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
 
+    // MARK: - outlets & var
     
     var specialities: [Speciality] = []
-    var newDoctor: Doctor?
-    
-    // MARK: - outlets
     
     @IBOutlet weak var addressField: UITextField!
     @IBOutlet weak var phoneField: UITextField!
@@ -22,7 +20,7 @@ class AjoutMedecinController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var spePicker: UIPickerView!
     
-    // MARK : - view control
+    // MARK: - view control
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,16 +34,15 @@ class AjoutMedecinController: UIViewController, UIPickerViewDataSource, UIPicker
         self.navigationController?.isNavigationBarHidden = false
     }
     
-    // MARK : - Navigation
+    // MARK: - Navigation
     
     let doctorValidationSegue = "doctorValidationSegue"
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == self.doctorValidationSegue {
-            guard let doctor = addDoctor() else {
+            guard (addDoctor() != nil) else {
                 return false
             }
-            self.newDoctor = doctor
         }
         return true
     }
@@ -54,7 +51,7 @@ class AjoutMedecinController: UIViewController, UIPickerViewDataSource, UIPicker
 //        <#code#>
 //    }
     
-    // MARK : - Actions & functions
+    // MARK: - Actions & functions
     
     func addDoctor() -> Doctor? {
         
@@ -79,6 +76,8 @@ class AjoutMedecinController: UIViewController, UIPickerViewDataSource, UIPicker
         // return it
         return Doctor(lastName: lastName!, speciality: speciality, firstName: firstName, phoneNumber: phone, address: address)
     }
+    
+    // MARK: - Picker functions
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

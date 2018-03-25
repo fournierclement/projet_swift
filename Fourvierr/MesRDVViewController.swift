@@ -16,14 +16,13 @@ class RdvTableCell: UITableViewCell{
 class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var myTable: UITableView!
-    let dateTest = ["08-12","09-11", "12-11"]
-    let heureTest = ["14h","17h30", "11h"]
-    let nomTest = ["Orthophoniste delaré","Dentiste DODO", "Kiné Zitérapete"]
+    var appointments : [Appointment] = []
     
     @IBOutlet weak var dateAujourdhuiLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.appointments = AppointmentDAO.getAll()!
         setUIEffects()
         // Do any additional setup after loading the view.
     }
@@ -35,15 +34,15 @@ class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 
    public func tableView(_: UITableView, numberOfRowsInSection: Int) -> Int{
-        return nomTest.count
+    return self.appointments.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "rdvCell", for: indexPath) as! RdvTableCell
 
-        cell.heureLabel?.text = heureTest[indexPath.row]
-        cell.dateLabel?.text = dateTest[indexPath.row]
-        cell.nomLabel?.text = nomTest[indexPath.row]
+        cell.heureLabel?.text = appointments[indexPath.row].hour
+        cell.dateLabel?.text = appointments[indexPath.row].day
+        cell.nomLabel?.text = appointments[indexPath.row].doctor.toString
         return cell
     }
     

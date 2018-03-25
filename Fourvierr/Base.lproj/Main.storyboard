@@ -51,13 +51,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mes Rendez Vous" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yw-C1-ws7">
-                                <rect key="frame" x="107.66666666666669" y="215" width="200" height="31.333333333333343"/>
+                                <rect key="frame" x="107.66666666666669" y="171" width="200" height="31.333333333333343"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kud-Oj-4Qd">
-                                <rect key="frame" x="20" y="316.33333333333326" width="374" height="269.66666666666674"/>
+                                <rect key="frame" x="20" y="272.33333333333326" width="374" height="313.66666666666674"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="80" minY="0.0" maxX="30" maxY="0.0"/>
                                 <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,14 +133,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar.png" translatesAutoresizingMaskIntoConstraints="NO" id="tuR-KL-1EV">
-                                <rect key="frame" x="143" y="72" width="128" height="128"/>
+                                <rect key="frame" x="143" y="28" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="JnF-sE-JT6"/>
                                     <constraint firstAttribute="height" constant="128" id="SRK-n1-9bo"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rih-Tg-LpY">
-                                <rect key="frame" x="180" y="124" width="55" height="45"/>
+                                <rect key="frame" x="180" y="80" width="55" height="45"/>
                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="45"/>
                                 <color key="textColor" red="0.20528632614213194" green="0.20528632614213194" blue="0.20528632614213194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -477,6 +477,9 @@
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" red="0.94050247850000002" green="0.99950428300000005" blue="0.8416891031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <segue destination="2ry-VQ-J0k" kind="showDetail" identifier="appointmentValidationSegue" id="qvk-SL-AbO"/>
+                                            </connections>
                                         </button>
                                         <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jz6-Gh-9nV">
                                             <rect key="frame" x="0.0" y="436" width="414" height="170"/>
@@ -1147,6 +1150,7 @@
         <image name="wallpaper4.jpg" width="1366" height="768"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fux-HN-jJt"/>
+        <segue reference="zvB-Hu-NFV"/>
+        <segue reference="qvk-SL-AbO"/>
     </inferredMetricsTieBreakers>
 </document>

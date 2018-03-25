@@ -12,7 +12,7 @@ import CoreData
 class SpecialityDAO {
     static let request : NSFetchRequest<SpecialityDTO> = SpecialityDTO.fetchRequest()
 
-    // MARK : - Speciality Initialization
+    // MARK: - Speciality Initialization
     
     static func initialize () {
         Speciality(label: "Autre")
@@ -22,7 +22,7 @@ class SpecialityDAO {
         Speciality(label: "Kinésithérapeute")
     }
     
-    // MARK : - Doctor Function
+    // MARK: - Speciality Functions
     static func search (label: String) -> SpecialityDTO? {
         self.request.predicate = NSPredicate(format: "label == %@", label )
         do {
@@ -44,6 +44,8 @@ class SpecialityDAO {
     
     static func getAll() -> [Speciality]? {
         self.request.predicate = nil
+        let sort = NSSortDescriptor(key:"label", ascending: true)
+        self.request.sortDescriptors = [sort]
         do{
             let specialitiesDTO = try CoreDataManager.context.fetch(self.request)
             return specialitiesDTO.map { Speciality(dto:$0)}
