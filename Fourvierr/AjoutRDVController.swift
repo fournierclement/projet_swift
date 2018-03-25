@@ -14,10 +14,11 @@ class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerView
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var medecinPicker: UIPickerView!
 
-    var pickerData: [String] = ["Jean Prensouin", "Jay malisi", "Dan tiste", "Mark monpoi"]
+    var doctors: [Doctor] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.doctors = DoctorDAO.getAll()!
         self.medecinPicker.delegate = self
         self.medecinPicker.dataSource = self
     }
@@ -32,11 +33,11 @@ class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
+        return doctors.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
+        return doctors[row].toString
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
