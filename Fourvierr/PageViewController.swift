@@ -16,8 +16,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 
     lazy var orderedViewControllers: [UIViewController] = {
         if(rdvNeurologueBientot() ){
-        return [self.newVc(viewController: "parametrePage"),
-                self.newVc(viewController: "parametrePage")]
+        return [self.newVc(viewController: "onOffAskerPage"),
+                self.newVc(viewController: "traitementAskerPage")]
         }
         else{
             return [self.newVc(viewController: "mesRDVPage"),
