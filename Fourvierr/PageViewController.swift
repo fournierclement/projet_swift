@@ -22,7 +22,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         else{
             return [self.newVc(viewController: "mesRDVPage"),
                     self.newVc(viewController: "medocsPage"),
-                    self.newVc(viewController: "parametrePage"),
+                    self.newVc(viewController: "sportPage"),
                     self.newVc(viewController: "parametrePage")]
         }
     }()

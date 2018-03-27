@@ -29,10 +29,12 @@
 		84766C33205AB99D005633D9 /* myAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C30205AB99D005633D9 /* myAvatar.png */; };
 		84C25A5420667B140060FC7D /* Medical_icons-03-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C25A5320667B140060FC7D /* Medical_icons-03-512.png */; };
 		84C25A5620667B4B0060FC7D /* MedocsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C25A5520667B4B0060FC7D /* MedocsController.swift */; };
-		84C25A5A2066851E0060FC7D /* wallpaper2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C25A572066851E0060FC7D /* wallpaper2.jpg */; };
 		84C25A5B2066851E0060FC7D /* wallpaper3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C25A582066851E0060FC7D /* wallpaper3.jpg */; };
 		84C25A5C2066851E0060FC7D /* wallpaper4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C25A592066851E0060FC7D /* wallpaper4.jpg */; };
 		84C25A5E2066934D0060FC7D /* AjoutTraitementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C25A5D2066934D0060FC7D /* AjoutTraitementController.swift */; };
+		84F9AD5F206A3723003F94A1 /* wallpaper2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84F9AD5E206A3723003F94A1 /* wallpaper2.jpg */; };
+		84F9AD61206A3869003F94A1 /* loadingwallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84F9AD60206A3869003F94A1 /* loadingwallpaper.jpg */; };
+		84F9AD63206A39B5003F94A1 /* decoText.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9AD62206A39B5003F94A1 /* decoText.png */; };
 		B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */; };
 		B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4C206122C200C779E1 /* MenuController.swift */; };
 		B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4E2061231E00C779E1 /* InfoController.swift */; };
@@ -86,10 +88,12 @@
 		84766C30205AB99D005633D9 /* myAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myAvatar.png; sourceTree = SOURCE_ROOT; };
 		84C25A5320667B140060FC7D /* Medical_icons-03-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medical_icons-03-512.png"; sourceTree = SOURCE_ROOT; };
 		84C25A5520667B4B0060FC7D /* MedocsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedocsController.swift; sourceTree = "<group>"; };
-		84C25A572066851E0060FC7D /* wallpaper2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper2.jpg; sourceTree = SOURCE_ROOT; };
 		84C25A582066851E0060FC7D /* wallpaper3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper3.jpg; sourceTree = SOURCE_ROOT; };
 		84C25A592066851E0060FC7D /* wallpaper4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper4.jpg; sourceTree = SOURCE_ROOT; };
 		84C25A5D2066934D0060FC7D /* AjoutTraitementController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjoutTraitementController.swift; sourceTree = "<group>"; };
+		84F9AD5E206A3723003F94A1 /* wallpaper2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper2.jpg; sourceTree = SOURCE_ROOT; };
+		84F9AD60206A3869003F94A1 /* loadingwallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loadingwallpaper.jpg; sourceTree = SOURCE_ROOT; };
+		84F9AD62206A39B5003F94A1 /* decoText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decoText.png; sourceTree = SOURCE_ROOT; };
 		B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjoutRDVController.swift; sourceTree = "<group>"; };
 		B18C3D4C206122C200C779E1 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		B18C3D4E2061231E00C779E1 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
@@ -209,7 +213,9 @@
 		84766C27205AB59F005633D9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				84C25A572066851E0060FC7D /* wallpaper2.jpg */,
+				84F9AD62206A39B5003F94A1 /* decoText.png */,
+				84F9AD60206A3869003F94A1 /* loadingwallpaper.jpg */,
+				84F9AD5E206A3723003F94A1 /* wallpaper2.jpg */,
 				84C25A582066851E0060FC7D /* wallpaper3.jpg */,
 				84C25A592066851E0060FC7D /* wallpaper4.jpg */,
 				84C25A5320667B140060FC7D /* Medical_icons-03-512.png */,
@@ -352,10 +358,12 @@
 				84C25A5B2066851E0060FC7D /* wallpaper3.jpg in Resources */,
 				46A76644203AE9FD0026D50D /* Assets.xcassets in Resources */,
 				84766C33205AB99D005633D9 /* myAvatar.png in Resources */,
-				84C25A5A2066851E0060FC7D /* wallpaper2.jpg in Resources */,
 				84C25A5C2066851E0060FC7D /* wallpaper4.jpg in Resources */,
 				46A7663F203AE9FD0026D50D /* Main.storyboard in Resources */,
+				84F9AD61206A3869003F94A1 /* loadingwallpaper.jpg in Resources */,
+				84F9AD63206A39B5003F94A1 /* decoText.png in Resources */,
 				84C25A5420667B140060FC7D /* Medical_icons-03-512.png in Resources */,
+				84F9AD5F206A3723003F94A1 /* wallpaper2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
