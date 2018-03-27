@@ -18,8 +18,6 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
   //Texte de type "3 pillule"
     @IBOutlet weak var quantiteTextField: UITextField!
     
-    //Au format string mais bien formé//
-    @IBOutlet weak var dateDebutTextField: UITextField!
     @IBOutlet weak var dateFinTextField: UITextField!
     /////////////
     @IBOutlet weak var traitementPicker: UIPickerView!
@@ -101,12 +99,9 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
         // bar button item
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
         toolbar.setItems([doneButton], animated: false)
-        
-        dateDebutTextField.inputAccessoryView = toolbar
         dateFinTextField.inputAccessoryView = toolbar
         
-        // assigning date picker to text field
-        dateDebutTextField.inputView = datePickerDebut
+        //assigning date picker to text field
         dateFinTextField.inputView = datePickerFin
         
         
@@ -118,8 +113,6 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .none
-        
-        dateDebutTextField.text = dateFormatter.string(from: datePickerDebut.date)
         dateFinTextField.text = dateFormatter.string(from: datePickerFin.date)
         self.view.endEditing(true)
     }
