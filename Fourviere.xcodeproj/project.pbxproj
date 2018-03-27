@@ -36,6 +36,7 @@
 		84F9AD61206A3869003F94A1 /* loadingwallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84F9AD60206A3869003F94A1 /* loadingwallpaper.jpg */; };
 		84F9AD63206A39B5003F94A1 /* decoText.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9AD62206A39B5003F94A1 /* decoText.png */; };
 		84F9AD65206A3D77003F94A1 /* iconSport.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9AD64206A3D77003F94A1 /* iconSport.png */; };
+		84F9AD67206A4D11003F94A1 /* SportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9AD66206A4D11003F94A1 /* SportController.swift */; };
 		B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */; };
 		B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4C206122C200C779E1 /* MenuController.swift */; };
 		B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4E2061231E00C779E1 /* InfoController.swift */; };
@@ -96,6 +97,7 @@
 		84F9AD60206A3869003F94A1 /* loadingwallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loadingwallpaper.jpg; sourceTree = SOURCE_ROOT; };
 		84F9AD62206A39B5003F94A1 /* decoText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decoText.png; sourceTree = SOURCE_ROOT; };
 		84F9AD64206A3D77003F94A1 /* iconSport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSport.png; sourceTree = SOURCE_ROOT; };
+		84F9AD66206A4D11003F94A1 /* SportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportController.swift; sourceTree = "<group>"; };
 		B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjoutRDVController.swift; sourceTree = "<group>"; };
 		B18C3D4C206122C200C779E1 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		B18C3D4E2061231E00C779E1 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				B1BF5E552062965200BB1390 /* AjoutMedecinController.swift */,
 				84C25A5520667B4B0060FC7D /* MedocsController.swift */,
 				84C25A5D2066934D0060FC7D /* AjoutTraitementController.swift */,
+				84F9AD66206A4D11003F94A1 /* SportController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				0B2870F120678E9200F822B1 /* CoreDataManager.swift in Sources */,
 				0B9B1E242067965A00601E50 /* Speciality.swift in Sources */,
 				8460923E205BCA41009FC67D /* MesRDVViewController.swift in Sources */,
+				84F9AD67206A4D11003F94A1 /* SportController.swift in Sources */,
 				46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */,
 				84C25A5E2066934D0060FC7D /* AjoutTraitementController.swift in Sources */,
 				84C25A5620667B4B0060FC7D /* MedocsController.swift in Sources */,
