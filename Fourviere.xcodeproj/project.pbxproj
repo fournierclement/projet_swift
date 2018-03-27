@@ -35,6 +35,7 @@
 		84F9AD5F206A3723003F94A1 /* wallpaper2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84F9AD5E206A3723003F94A1 /* wallpaper2.jpg */; };
 		84F9AD61206A3869003F94A1 /* loadingwallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84F9AD60206A3869003F94A1 /* loadingwallpaper.jpg */; };
 		84F9AD63206A39B5003F94A1 /* decoText.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9AD62206A39B5003F94A1 /* decoText.png */; };
+		84F9AD65206A3D77003F94A1 /* iconSport.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9AD64206A3D77003F94A1 /* iconSport.png */; };
 		B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */; };
 		B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4C206122C200C779E1 /* MenuController.swift */; };
 		B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C3D4E2061231E00C779E1 /* InfoController.swift */; };
@@ -94,6 +95,7 @@
 		84F9AD5E206A3723003F94A1 /* wallpaper2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper2.jpg; sourceTree = SOURCE_ROOT; };
 		84F9AD60206A3869003F94A1 /* loadingwallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loadingwallpaper.jpg; sourceTree = SOURCE_ROOT; };
 		84F9AD62206A39B5003F94A1 /* decoText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decoText.png; sourceTree = SOURCE_ROOT; };
+		84F9AD64206A3D77003F94A1 /* iconSport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSport.png; sourceTree = SOURCE_ROOT; };
 		B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjoutRDVController.swift; sourceTree = "<group>"; };
 		B18C3D4C206122C200C779E1 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		B18C3D4E2061231E00C779E1 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		84766C27205AB59F005633D9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				84F9AD64206A3D77003F94A1 /* iconSport.png */,
 				84F9AD62206A39B5003F94A1 /* decoText.png */,
 				84F9AD60206A3869003F94A1 /* loadingwallpaper.jpg */,
 				84F9AD5E206A3723003F94A1 /* wallpaper2.jpg */,
@@ -352,6 +355,7 @@
 			files = (
 				84609240205BF68D009FC67D /* calendar.png in Resources */,
 				46A76647203AE9FD0026D50D /* LaunchScreen.storyboard in Resources */,
+				84F9AD65206A3D77003F94A1 /* iconSport.png in Resources */,
 				84766C32205AB99D005633D9 /* myAvatar (1).png in Resources */,
 				B18C3D512061300500C779E1 /* add.png in Resources */,
 				84766C31205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png in Resources */,
