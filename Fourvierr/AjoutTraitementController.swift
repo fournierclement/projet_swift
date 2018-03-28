@@ -22,12 +22,13 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
     /////////////
     @IBOutlet weak var traitementPicker: UIPickerView!
     @IBOutlet weak var myTable: UITableView!
-    var pickerData: [String] = ["Xanax 200","HyperSomeille","Aspirateurine"]
+    var medecines: [Medecine] = []
     let heurePrise = ["6h","7h","8h","9h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h","21h","22h"]
     let switchValue = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.medecines = MedecineDAO.getAll()!
         self.traitementPicker.delegate = self
         self.traitementPicker.dataSource = self
         createDatePicker()
@@ -40,11 +41,11 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
+        return medecines.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
+        return medecines[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

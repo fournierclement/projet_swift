@@ -12,6 +12,8 @@
 		0B2870F120678E9200F822B1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2870F020678E9200F822B1 /* CoreDataManager.swift */; };
 		0B642B682067CC290093B028 /* AppointmentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B672067CC290093B028 /* AppointmentDAO.swift */; };
 		0B642B6A2067CDD80093B028 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B692067CDD80093B028 /* Appointment.swift */; };
+		0B642B6C2067E2230093B028 /* MedecineDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B6B2067E2230093B028 /* MedecineDAO.swift */; };
+		0B642B6E2067E3200093B028 /* Medecine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B6D2067E3200093B028 /* Medecine.swift */; };
 		0B9B1E22206795E900601E50 /* SpecialityDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B1E21206795E900601E50 /* SpecialityDAO.swift */; };
 		0B9B1E242067965A00601E50 /* Speciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B1E232067965A00601E50 /* Speciality.swift */; };
 		46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A76639203AE9FD0026D50D /* AppDelegate.swift */; };
@@ -76,6 +78,8 @@
 		0B2870F020678E9200F822B1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		0B642B672067CC290093B028 /* AppointmentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDAO.swift; sourceTree = "<group>"; };
 		0B642B692067CDD80093B028 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		0B642B6B2067E2230093B028 /* MedecineDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedecineDAO.swift; sourceTree = "<group>"; };
+		0B642B6D2067E3200093B028 /* Medecine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medecine.swift; sourceTree = "<group>"; };
 		0B9B1E21206795E900601E50 /* SpecialityDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialityDAO.swift; sourceTree = "<group>"; };
 		0B9B1E232067965A00601E50 /* Speciality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speciality.swift; sourceTree = "<group>"; };
 		46A76636203AE9FD0026D50D /* Fourviere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fourviere.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +166,7 @@
 				0B2870EB2067865700F822B1 /* Doctor.swift */,
 				0B9B1E232067965A00601E50 /* Speciality.swift */,
 				0B642B692067CDD80093B028 /* Appointment.swift */,
+				0B642B6D2067E3200093B028 /* Medecine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				0B642B672067CC290093B028 /* AppointmentDAO.swift */,
 				0B2870EE20678E7300F822B1 /* DoctorDAO.swift */,
 				0B9B1E21206795E900601E50 /* SpecialityDAO.swift */,
+				0B642B6B2067E2230093B028 /* MedecineDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -433,6 +439,8 @@
 				849F8576206E5EB4008DCA14 /* AjoutActiviteeController.swift in Sources */,
 				84DAC6B2206A84C900511F0E /* BravoController.swift in Sources */,
 				84DAC6B0206A842900511F0E /* ValiderActiviteController.swift in Sources */,
+				0B642B6E2067E3200093B028 /* Medecine.swift in Sources */,
+				0B642B6C2067E2230093B028 /* MedecineDAO.swift in Sources */,
 				B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */,
 				84DAC6AE206A82C800511F0E /* VoirMedecinController.swift in Sources */,
 				B1BF5E562062965200BB1390 /* AjoutMedecinController.swift in Sources */,
