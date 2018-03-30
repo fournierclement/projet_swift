@@ -27,6 +27,12 @@
 		84766C31205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */; };
 		84766C32205AB99D005633D9 /* myAvatar (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C2F205AB99D005633D9 /* myAvatar (1).png */; };
 		84766C33205AB99D005633D9 /* myAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 84766C30205AB99D005633D9 /* myAvatar.png */; };
+		849F8570206E5753008DCA14 /* RapportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F856F206E5753008DCA14 /* RapportController.swift */; };
+		849F8572206E58D5008DCA14 /* SupprimerActiviteeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F8571206E58D5008DCA14 /* SupprimerActiviteeController.swift */; };
+		849F8574206E5A8D008DCA14 /* SupprimerTraitementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F8573206E5A8D008DCA14 /* SupprimerTraitementController.swift */; };
+		849F8576206E5EB4008DCA14 /* AjoutActiviteeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F8575206E5EB4008DCA14 /* AjoutActiviteeController.swift */; };
+		849F8578206E6105008DCA14 /* OnOffAskerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F8577206E6105008DCA14 /* OnOffAskerController.swift */; };
+		849F857A206E615D008DCA14 /* TraitementAskerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F8579206E615D008DCA14 /* TraitementAskerController.swift */; };
 		84C25A5420667B140060FC7D /* Medical_icons-03-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C25A5320667B140060FC7D /* Medical_icons-03-512.png */; };
 		84C25A5620667B4B0060FC7D /* MedocsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C25A5520667B4B0060FC7D /* MedocsController.swift */; };
 		84C25A5B2066851E0060FC7D /* wallpaper3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C25A582066851E0060FC7D /* wallpaper3.jpg */; };
@@ -91,6 +97,12 @@
 		84766C2E205AB99D005633D9 /* Logo_Reseau_Polytech.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Reseau_Polytech.svg.png; sourceTree = SOURCE_ROOT; };
 		84766C2F205AB99D005633D9 /* myAvatar (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myAvatar (1).png"; sourceTree = SOURCE_ROOT; };
 		84766C30205AB99D005633D9 /* myAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myAvatar.png; sourceTree = SOURCE_ROOT; };
+		849F856F206E5753008DCA14 /* RapportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RapportController.swift; sourceTree = "<group>"; };
+		849F8571206E58D5008DCA14 /* SupprimerActiviteeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupprimerActiviteeController.swift; sourceTree = "<group>"; };
+		849F8573206E5A8D008DCA14 /* SupprimerTraitementController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupprimerTraitementController.swift; sourceTree = "<group>"; };
+		849F8575206E5EB4008DCA14 /* AjoutActiviteeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjoutActiviteeController.swift; sourceTree = "<group>"; };
+		849F8577206E6105008DCA14 /* OnOffAskerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnOffAskerController.swift; sourceTree = "<group>"; };
+		849F8579206E615D008DCA14 /* TraitementAskerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraitementAskerController.swift; sourceTree = "<group>"; };
 		84C25A5320667B140060FC7D /* Medical_icons-03-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medical_icons-03-512.png"; sourceTree = SOURCE_ROOT; };
 		84C25A5520667B4B0060FC7D /* MedocsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedocsController.swift; sourceTree = "<group>"; };
 		84C25A582066851E0060FC7D /* wallpaper3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper3.jpg; sourceTree = SOURCE_ROOT; };
@@ -254,6 +266,12 @@
 				84DAC6AD206A82C800511F0E /* VoirMedecinController.swift */,
 				84DAC6AF206A842900511F0E /* ValiderActiviteController.swift */,
 				84DAC6B1206A84C900511F0E /* BravoController.swift */,
+				849F856F206E5753008DCA14 /* RapportController.swift */,
+				849F8571206E58D5008DCA14 /* SupprimerActiviteeController.swift */,
+				849F8573206E5A8D008DCA14 /* SupprimerTraitementController.swift */,
+				849F8575206E5EB4008DCA14 /* AjoutActiviteeController.swift */,
+				849F8577206E6105008DCA14 /* OnOffAskerController.swift */,
+				849F8579206E615D008DCA14 /* TraitementAskerController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -408,8 +426,11 @@
 				0B2870EF20678E7300F822B1 /* DoctorDAO.swift in Sources */,
 				0B642B682067CC290093B028 /* AppointmentDAO.swift in Sources */,
 				B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */,
+				849F857A206E615D008DCA14 /* TraitementAskerController.swift in Sources */,
 				0B9B1E22206795E900601E50 /* SpecialityDAO.swift in Sources */,
 				0B2870EC2067865700F822B1 /* Doctor.swift in Sources */,
+				849F8574206E5A8D008DCA14 /* SupprimerTraitementController.swift in Sources */,
+				849F8576206E5EB4008DCA14 /* AjoutActiviteeController.swift in Sources */,
 				84DAC6B2206A84C900511F0E /* BravoController.swift in Sources */,
 				84DAC6B0206A842900511F0E /* ValiderActiviteController.swift in Sources */,
 				B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */,
@@ -418,11 +439,14 @@
 				B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */,
 				0B2870F120678E9200F822B1 /* CoreDataManager.swift in Sources */,
 				0B9B1E242067965A00601E50 /* Speciality.swift in Sources */,
+				849F8572206E58D5008DCA14 /* SupprimerActiviteeController.swift in Sources */,
 				8460923E205BCA41009FC67D /* MesRDVViewController.swift in Sources */,
 				84F9AD67206A4D11003F94A1 /* SportController.swift in Sources */,
+				849F8570206E5753008DCA14 /* RapportController.swift in Sources */,
 				46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */,
 				84C25A5E2066934D0060FC7D /* AjoutTraitementController.swift in Sources */,
 				84C25A5620667B4B0060FC7D /* MedocsController.swift in Sources */,
+				849F8578206E6105008DCA14 /* OnOffAskerController.swift in Sources */,
 				0B642B6A2067CDD80093B028 /* Appointment.swift in Sources */,
 				46A76642203AE9FD0026D50D /* Fourvierr.xcdatamodeld in Sources */,
 			);
