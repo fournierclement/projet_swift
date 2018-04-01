@@ -44,7 +44,7 @@ class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     @IBAction func unwindToAddRDV(segue:UIStoryboardSegue) {
         self.doctors = DoctorDAO.getAll()!
-//        medecinPicker.reloadAllComponents()
+        medecinPicker.reloadAllComponents()
     }
     
     // MARK: - Actions & functions
