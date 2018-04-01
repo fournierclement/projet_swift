@@ -52,4 +52,8 @@ class AppointmentDAO {
             return []
         }
     }
+    
+    static func delete(appointment: Appointment){
+        CoreDataManager.context.delete(appointment.dto)
+    }
 }
