@@ -93,4 +93,15 @@ class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.appointments = AppointmentDAO.getAll()!
         myTable.reloadData()
     }
+    
+    let detailsAppointment = "detailsAppointment"
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == self.detailsAppointment)	{
+            if let indexPath = self.myTable.indexPathForSelectedRow {
+                let showDoctorDetails = segue.destination as! VoirMedecinController
+                showDoctorDetails.appointment = self.appointments[indexPath.row]
+            }
+        }
+    }
 }

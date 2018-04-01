@@ -47,11 +47,11 @@ class Doctor{
         return self.dto.practices?.label
     }
     var toString : String {
-       /* guard let speciality = self.speciality?.prefix(4) else {
+        guard let speciality = self.speciality?.prefix(4) else {
             return self.lastName
         }
-        return  speciality + ". " + self.lastName*/
-        return "yep"
+        return  speciality + ". " + self.lastName
+//        return "yep"
     }
     
 }

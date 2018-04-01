@@ -127,7 +127,7 @@
                                             <outlet property="dateLabel" destination="bVS-Qq-1ZR" id="qDB-U2-Qmo"/>
                                             <outlet property="heureLabel" destination="6DC-1B-Y4t" id="K9D-tv-Sn6"/>
                                             <outlet property="nomLabel" destination="pq8-4i-1aJ" id="CTY-I1-IVI"/>
-                                            <segue destination="OW1-AJ-jfz" kind="show" id="wgj-gk-Cm6"/>
+                                            <segue destination="OW1-AJ-jfz" kind="show" identifier="detailsAppointment" id="wgj-gk-Cm6"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1687,44 +1687,8 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spécialité" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylJ-B7-6QL">
-                                <rect key="frame" x="70" y="454" width="274" height="31.333333333333314"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dorlépassien" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8K-hU-hsT">
-                                <rect key="frame" x="20" y="217" width="374" height="19"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jean" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99y-7Y-w0N">
-                                <rect key="frame" x="20" y="287" width="374" height="19"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06052321145" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvb-Th-ptr">
-                                <rect key="frame" x="20" y="357" width="374" height="19"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2225 rue du mark sue, 34060 Mapalier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlT-mS-I4g">
-                                <rect key="frame" x="20" y="427" width="374" height="19"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neurologue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-Dz-OwO">
-                                <rect key="frame" x="20" y="493.33333333333331" width="374" height="18.999999999999943"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efE-PD-hh7">
-                                <rect key="frame" x="70" y="174" width="274" height="35"/>
+                                <rect key="frame" x="70" y="114" width="274" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="rZd-jZ-0D1"/>
                                 </constraints>
@@ -1732,8 +1696,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dorlépassien" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8K-hU-hsT">
+                                <rect key="frame" x="20" y="157" width="374" height="19"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prénom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsC-rY-TMt">
-                                <rect key="frame" x="70" y="244" width="274" height="35"/>
+                                <rect key="frame" x="70" y="184" width="274" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="gNF-av-kIY"/>
                                 </constraints>
@@ -1741,8 +1711,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jean" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99y-7Y-w0N">
+                                <rect key="frame" x="20" y="227" width="374" height="19"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06052321145" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvb-Th-ptr">
+                                <rect key="frame" x="20" y="297" width="374" height="19"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Téléphone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctS-LF-RDP">
-                                <rect key="frame" x="70" y="314" width="274" height="35"/>
+                                <rect key="frame" x="70" y="254" width="274" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Zvz-RT-AFp"/>
                                 </constraints>
@@ -1751,7 +1733,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTS-Xd-pNe">
-                                <rect key="frame" x="70" y="384" width="274" height="35"/>
+                                <rect key="frame" x="70" y="324" width="274" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Dgy-cI-yMk"/>
                                 </constraints>
@@ -1759,6 +1741,49 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2225 rue du mark sue, 34060 Mapalier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlT-mS-I4g">
+                                <rect key="frame" x="20" y="367" width="374" height="19"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spécialité" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylJ-B7-6QL">
+                                <rect key="frame" x="70" y="394" width="274" height="31.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neurologue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-Dz-OwO">
+                                <rect key="frame" x="20" y="433" width="374" height="19"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Usz-kH-HQT" userLabel="date stack">
+                                <rect key="frame" x="20" y="482" width="374" height="204"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-a9-0fL" userLabel="date Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="102"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="den-tW-vvE" userLabel="heure Label">
+                                        <rect key="frame" x="0.0" y="102" width="374" height="102"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Tft-a9-0fL" secondAttribute="trailing" id="6Q9-yk-nsj"/>
+                                    <constraint firstItem="den-tW-vvE" firstAttribute="height" secondItem="Tft-a9-0fL" secondAttribute="height" id="CTy-ZG-vdN"/>
+                                    <constraint firstItem="Tft-a9-0fL" firstAttribute="leading" secondItem="Usz-kH-HQT" secondAttribute="leading" id="PwT-Gp-fGS"/>
+                                    <constraint firstItem="den-tW-vvE" firstAttribute="width" secondItem="Tft-a9-0fL" secondAttribute="width" id="crV-s9-Vex"/>
+                                    <constraint firstAttribute="trailing" secondItem="den-tW-vvE" secondAttribute="trailing" id="pIr-kz-9b4"/>
+                                    <constraint firstItem="den-tW-vvE" firstAttribute="leading" secondItem="Usz-kH-HQT" secondAttribute="leading" id="pYQ-9j-cRA"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1769,6 +1794,7 @@
                             <constraint firstItem="ylJ-B7-6QL" firstAttribute="leading" secondItem="IlM-Rn-aCV" secondAttribute="leadingMargin" constant="50" id="1cV-Hx-jdZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ylJ-B7-6QL" secondAttribute="trailing" constant="50" id="2xf-8n-mnn"/>
                             <constraint firstItem="T8K-hU-hsT" firstAttribute="trailing" secondItem="IlM-Rn-aCV" secondAttribute="trailingMargin" id="5rE-tf-Myc"/>
+                            <constraint firstItem="Usz-kH-HQT" firstAttribute="top" secondItem="GHc-Dz-OwO" secondAttribute="bottom" constant="30" id="7qq-ym-jcx"/>
                             <constraint firstItem="Vvb-Th-ptr" firstAttribute="top" secondItem="ctS-LF-RDP" secondAttribute="bottom" constant="8" id="8j9-TB-1mO"/>
                             <constraint firstItem="W0o-9I-SwN" firstAttribute="leading" secondItem="IlM-Rn-aCV" secondAttribute="leading" id="8vy-xW-q78"/>
                             <constraint firstAttribute="trailing" secondItem="W0o-9I-SwN" secondAttribute="trailing" id="91o-dX-I3L"/>
@@ -1781,8 +1807,10 @@
                             <constraint firstItem="ctS-LF-RDP" firstAttribute="top" secondItem="99y-7Y-w0N" secondAttribute="bottom" constant="8" id="HIJ-rz-3NQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pTS-Xd-pNe" secondAttribute="trailing" constant="50" id="IbS-BH-qYf"/>
                             <constraint firstItem="T8K-hU-hsT" firstAttribute="leading" secondItem="IlM-Rn-aCV" secondAttribute="leadingMargin" id="JhL-9n-MFj"/>
-                            <constraint firstItem="efE-PD-hh7" firstAttribute="top" secondItem="G0S-zF-DWg" secondAttribute="bottom" constant="110" id="QMm-ca-CZx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Usz-kH-HQT" secondAttribute="trailing" id="Ouf-dx-TeN"/>
+                            <constraint firstItem="efE-PD-hh7" firstAttribute="top" secondItem="G0S-zF-DWg" secondAttribute="bottom" constant="50" id="QMm-ca-CZx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lsC-rY-TMt" secondAttribute="trailing" constant="50" id="QSQ-yw-2mC"/>
+                            <constraint firstItem="ArE-4d-kfK" firstAttribute="top" secondItem="Usz-kH-HQT" secondAttribute="bottom" constant="50" id="YBu-Vu-JlR"/>
                             <constraint firstItem="1d9-HQ-7La" firstAttribute="top" secondItem="IlM-Rn-aCV" secondAttribute="top" id="Zjx-tx-d1R"/>
                             <constraint firstItem="ylJ-B7-6QL" firstAttribute="top" secondItem="BlT-mS-I4g" secondAttribute="bottom" constant="8" id="a0N-kK-Nat"/>
                             <constraint firstAttribute="trailing" secondItem="Vvb-Th-ptr" secondAttribute="trailing" constant="20" id="cfN-eB-b0G"/>
@@ -1791,6 +1819,8 @@
                             <constraint firstAttribute="trailing" secondItem="BlT-mS-I4g" secondAttribute="trailing" constant="20" id="dzW-Vt-SC8"/>
                             <constraint firstAttribute="trailing" secondItem="99y-7Y-w0N" secondAttribute="trailing" constant="20" id="eWR-za-8us"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ctS-LF-RDP" secondAttribute="trailing" constant="50" id="f4S-O5-h2E"/>
+                            <constraint firstItem="Usz-kH-HQT" firstAttribute="leading" secondItem="IlM-Rn-aCV" secondAttribute="leadingMargin" id="h1D-19-4rX"/>
+                            <constraint firstItem="Usz-kH-HQT" firstAttribute="centerX" secondItem="IlM-Rn-aCV" secondAttribute="centerX" id="j0C-EV-ZWi"/>
                             <constraint firstItem="pTS-Xd-pNe" firstAttribute="top" secondItem="Vvb-Th-ptr" secondAttribute="bottom" constant="8" id="kCb-5U-hut"/>
                             <constraint firstItem="BlT-mS-I4g" firstAttribute="top" secondItem="pTS-Xd-pNe" secondAttribute="bottom" constant="8" id="nNj-Nn-NVp"/>
                             <constraint firstItem="99y-7Y-w0N" firstAttribute="leading" secondItem="IlM-Rn-aCV" secondAttribute="leading" constant="20" id="obm-Jy-ilB"/>
@@ -1804,6 +1834,8 @@
                     </view>
                     <connections>
                         <outlet property="adresseLabel" destination="BlT-mS-I4g" id="DE3-UV-sxf"/>
+                        <outlet property="dateLabel" destination="Tft-a9-0fL" id="nVT-jl-GR0"/>
+                        <outlet property="heureLabel" destination="den-tW-vvE" id="epY-zG-rTL"/>
                         <outlet property="nomLabel" destination="T8K-hU-hsT" id="6i7-P9-oLp"/>
                         <outlet property="prenomLabel" destination="99y-7Y-w0N" id="ahy-5y-DcJ"/>
                         <outlet property="speLabel" destination="GHc-Dz-OwO" id="TeF-dc-Pvc"/>
