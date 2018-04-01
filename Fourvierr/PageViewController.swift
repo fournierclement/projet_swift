@@ -111,7 +111,4 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         let pageContentViewController = pageViewController.viewControllers![0]
         self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
     }
-
-    
-
 }

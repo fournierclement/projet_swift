@@ -31,7 +31,6 @@ class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
    public func tableView(_: UITableView, numberOfRowsInSection: Int) -> Int{
     return self.appointments.count
@@ -68,6 +67,8 @@ class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewWillAppear(animated);
         self.navigationController?.isNavigationBarHidden = true
     }
-    
-
+    @IBAction func unwindToRDV(segue:UIStoryboardSegue) {
+        self.appointments = AppointmentDAO.getAll()!
+        myTable.reloadData()
+    }
 }

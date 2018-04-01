@@ -42,6 +42,11 @@ class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerView
         return true
     }
     
+    @IBAction func unwindToAddRDV(segue:UIStoryboardSegue) {
+        self.doctors = DoctorDAO.getAll()!
+//        medecinPicker.reloadAllComponents()
+    }
+    
     // MARK: - Actions & functions
     
     func addAppointment() -> Appointment? {
@@ -67,6 +72,5 @@ class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerView
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
     }
-    
 
 }
