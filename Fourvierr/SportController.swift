@@ -8,7 +8,6 @@ import UIKit
 
 class SportCell: UITableViewCell{
     
-    @IBOutlet weak var heureLabel: UILabel!
     @IBOutlet weak var activiteLabel: UILabel!
     @IBOutlet weak var expLabel: UILabel!
 }
@@ -19,15 +18,14 @@ class SportController: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var progressBar: UIProgressView!
     
     @IBOutlet weak var myTable: UITableView!
-    let xpText = ["100xp","150xp","125xp"]
-    let heureTest = ["14h","17h30", "11h"]
-    let nomTest = ["20 squatt","50 pompes","5 tractions"]
+    var exercices : [Exercice] = []
     
     @IBOutlet weak var dateAujourdhuiLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUIEffects()
+        self.exercices = ExerciceDAO.getTodayExercices()!
         // Do any additional setup after loading the view.
     }
     
@@ -38,15 +36,14 @@ class SportController: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     
     public func tableView(_: UITableView, numberOfRowsInSection: Int) -> Int{
-        return self.nomTest.count
+        return self.exercices.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "sportCell", for: indexPath) as! SportCell
         
-        cell.heureLabel?.text = heureTest[indexPath.row]
-        cell.expLabel?.text = xpText[indexPath.row]
-        cell.activiteLabel?.text = nomTest[indexPath.row]
+        cell.expLabel?.text = "\(exercices[indexPath.row].exp)exp"
+        cell.activiteLabel?.text = exercices[indexPath.row].toString
         return cell
     }
     
@@ -69,5 +66,11 @@ class SportController: UIViewController, UITableViewDelegate, UITableViewDataSou
         self.navigationController?.isNavigationBarHidden = true
     }
     
+    // MARK: - Navigation
+    
+    @IBAction func unwindToExercices(segue:UIStoryboardSegue) {
+        self.exercices = ExerciceDAO.getTodayExercices()!
+        self.myTable.reloadData()
+    }
     
 }

@@ -1,53 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Activity" representedClassName="Activity" syncable="YES" codeGenerationType="class">
-        <relationship name="is_Practiced" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="to_Practice" inverseEntity="Course" syncable="YES"/>
-    </entity>
     <entity name="AppointmentDTO" representedClassName="AppointmentDTO" syncable="YES" codeGenerationType="class">
-        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="to_Meet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DoctorDTO" inverseName="is_Meet" inverseEntity="DoctorDTO" syncable="YES"/>
-    </entity>
-    <entity name="Course" representedClassName="Course" syncable="YES" codeGenerationType="class">
-        <attribute name="fulfilled" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="to_Practice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="is_Practiced" inverseEntity="Activity" syncable="YES"/>
     </entity>
     <entity name="DoctorDTO" representedClassName="DoctorDTO" syncable="YES" codeGenerationType="class">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" attributeType="String" syncable="YES"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="is_Meet" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="AppointmentDTO" inverseName="to_Meet" inverseEntity="AppointmentDTO" syncable="YES"/>
-        <relationship name="practices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SpecialityDTO" inverseName="is_practiced" inverseEntity="SpecialityDTO" syncable="YES"/>
+        <relationship name="practices" maxCount="1" deletionRule="Nullify" destinationEntity="SpecialityDTO" inverseName="is_practiced" inverseEntity="SpecialityDTO" syncable="YES"/>
     </entity>
-    <entity name="DoseDTO" representedClassName="DoseDTO" syncable="YES" codeGenerationType="class">
-        <attribute name="fulfilled" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="hour" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <relationship name="depends" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TreatmentDTO" inverseName="every" inverseEntity="TreatmentDTO" syncable="YES"/>
+    <entity name="ExerciceDTO" representedClassName="ExerciceDTO" syncable="YES" codeGenerationType="class">
+        <attribute name="entitled" attributeType="String" syncable="YES"/>
+        <attribute name="workingDays" attributeType="Transformable" customClassName="Set&lt;String&gt;" syncable="YES"/>
     </entity>
     <entity name="MedecineDTO" representedClassName="MedecineDTO" syncable="YES" codeGenerationType="class">
         <attribute name="descriptus" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
         <relationship name="must_Be_Taken" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TreatmentDTO" inverseName="takes" inverseEntity="TreatmentDTO" syncable="YES"/>
     </entity>
+    <entity name="RapportDTO" representedClassName="RapportDTO" syncable="YES" codeGenerationType="class"/>
     <entity name="SpecialityDTO" representedClassName="SpecialityDTO" syncable="YES" codeGenerationType="class">
-        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="label" attributeType="String" syncable="YES"/>
         <relationship name="is_practiced" optional="YES" toMany="YES" deletionRule="Deny" ordered="YES" destinationEntity="DoctorDTO" inverseName="practices" inverseEntity="DoctorDTO" syncable="YES"/>
     </entity>
     <entity name="TreatmentDTO" representedClassName="TreatmentDTO" syncable="YES" codeGenerationType="class">
-        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="hours" attributeType="Transformable" customClassName="Set&lt;String&gt;" syncable="YES"/>
-        <attribute name="quantity" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="every" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DoseDTO" inverseName="depends" inverseEntity="DoseDTO" syncable="YES"/>
-        <relationship name="takes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MedecineDTO" inverseName="must_Be_Taken" inverseEntity="MedecineDTO" syncable="YES"/>
+        <attribute name="quantity" attributeType="String" syncable="YES"/>
+        <relationship name="takes" maxCount="1" deletionRule="Nullify" destinationEntity="MedecineDTO" inverseName="must_Be_Taken" inverseEntity="MedecineDTO" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Activity" positionX="1836" positionY="-3307" width="128" height="58"/>
         <element name="AppointmentDTO" positionX="1674" positionY="-3673" width="128" height="73"/>
-        <element name="Course" positionX="1674" positionY="-3312" width="128" height="73"/>
         <element name="DoctorDTO" positionX="1872" positionY="-3672" width="117" height="133"/>
-        <element name="DoseDTO" positionX="1674" positionY="-3454" width="128" height="88"/>
-        <element name="MedecineDTO" positionX="2070" positionY="-3460" width="128" height="88"/>
+        <element name="MedecineDTO" positionX="1917" positionY="-3514" width="128" height="88"/>
         <element name="SpecialityDTO" positionX="2086" positionY="-3745" width="128" height="73"/>
-        <element name="TreatmentDTO" positionX="1870" positionY="-3472" width="128" height="118"/>
+        <element name="TreatmentDTO" positionX="1717" positionY="-3526" width="128" height="103"/>
+        <element name="ExerciceDTO" positionX="1872" positionY="-3372" width="128" height="73"/>
+        <element name="RapportDTO" positionX="2041" positionY="-3366" width="128" height="43"/>
     </elements>
 </model>

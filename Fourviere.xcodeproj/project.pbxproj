@@ -10,6 +10,8 @@
 		0B2870EC2067865700F822B1 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2870EB2067865700F822B1 /* Doctor.swift */; };
 		0B2870EF20678E7300F822B1 /* DoctorDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2870EE20678E7300F822B1 /* DoctorDAO.swift */; };
 		0B2870F120678E9200F822B1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2870F020678E9200F822B1 /* CoreDataManager.swift */; };
+		0B4B971520726E2C00EADE79 /* Exercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B971420726E2C00EADE79 /* Exercice.swift */; };
+		0B4B9717207270D600EADE79 /* ExerciceDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B9716207270D600EADE79 /* ExerciceDAO.swift */; };
 		0B642B682067CC290093B028 /* AppointmentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B672067CC290093B028 /* AppointmentDAO.swift */; };
 		0B642B6A2067CDD80093B028 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B692067CDD80093B028 /* Appointment.swift */; };
 		0B642B6C2067E2230093B028 /* MedecineDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B6B2067E2230093B028 /* MedecineDAO.swift */; };
@@ -80,6 +82,8 @@
 		0B2870EB2067865700F822B1 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		0B2870EE20678E7300F822B1 /* DoctorDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorDAO.swift; path = Fourvierr/DAO/DoctorDAO.swift; sourceTree = SOURCE_ROOT; };
 		0B2870F020678E9200F822B1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0B4B971420726E2C00EADE79 /* Exercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice.swift; sourceTree = "<group>"; };
+		0B4B9716207270D600EADE79 /* ExerciceDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceDAO.swift; sourceTree = "<group>"; };
 		0B642B672067CC290093B028 /* AppointmentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDAO.swift; sourceTree = "<group>"; };
 		0B642B692067CDD80093B028 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		0B642B6B2067E2230093B028 /* MedecineDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedecineDAO.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				0B642B6D2067E3200093B028 /* Medecine.swift */,
 				0BCB2CE9207129170079F9DA /* Treatment.swift */,
 				0BCB2CED207129B70079F9DA /* Dose.swift */,
+				0B4B971420726E2C00EADE79 /* Exercice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				0B642B6B2067E2230093B028 /* MedecineDAO.swift */,
 				0BCB2CE72071280A0079F9DA /* TreatmentDAO.swift */,
 				0BCB2CEB2071296F0079F9DA /* DoseDAO.swift */,
+				0B4B9716207270D600EADE79 /* ExerciceDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -272,24 +278,24 @@
 		84E46AC220593B5B00EA42A0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				84766C25205AAF11005633D9 /* PageViewController.swift */,
-				8460923D205BCA41009FC67D /* MesRDVViewController.swift */,
-				B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */,
-				B18C3D4C206122C200C779E1 /* MenuController.swift */,
-				B18C3D4E2061231E00C779E1 /* InfoController.swift */,
+				849F8575206E5EB4008DCA14 /* AjoutActiviteeController.swift */,
 				B1BF5E552062965200BB1390 /* AjoutMedecinController.swift */,
-				84C25A5520667B4B0060FC7D /* MedocsController.swift */,
+				B18C3D4A2061197D00C779E1 /* AjoutRDVController.swift */,
 				84C25A5D2066934D0060FC7D /* AjoutTraitementController.swift */,
-				84F9AD66206A4D11003F94A1 /* SportController.swift */,
-				84DAC6AD206A82C800511F0E /* VoirMedecinController.swift */,
-				84DAC6AF206A842900511F0E /* ValiderActiviteController.swift */,
 				84DAC6B1206A84C900511F0E /* BravoController.swift */,
+				B18C3D4E2061231E00C779E1 /* InfoController.swift */,
+				84C25A5520667B4B0060FC7D /* MedocsController.swift */,
+				B18C3D4C206122C200C779E1 /* MenuController.swift */,
+				8460923D205BCA41009FC67D /* MesRDVViewController.swift */,
+				849F8577206E6105008DCA14 /* OnOffAskerController.swift */,
+				84766C25205AAF11005633D9 /* PageViewController.swift */,
 				849F856F206E5753008DCA14 /* RapportController.swift */,
+				84F9AD66206A4D11003F94A1 /* SportController.swift */,
 				849F8571206E58D5008DCA14 /* SupprimerActiviteeController.swift */,
 				849F8573206E5A8D008DCA14 /* SupprimerTraitementController.swift */,
-				849F8575206E5EB4008DCA14 /* AjoutActiviteeController.swift */,
-				849F8577206E6105008DCA14 /* OnOffAskerController.swift */,
 				849F8579206E615D008DCA14 /* TraitementAskerController.swift */,
+				84DAC6AF206A842900511F0E /* ValiderActiviteController.swift */,
+				84DAC6AD206A82C800511F0E /* VoirMedecinController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -443,6 +449,7 @@
 				84766C26205AAF11005633D9 /* PageViewController.swift in Sources */,
 				0B2870EF20678E7300F822B1 /* DoctorDAO.swift in Sources */,
 				0B642B682067CC290093B028 /* AppointmentDAO.swift in Sources */,
+				0B4B9717207270D600EADE79 /* ExerciceDAO.swift in Sources */,
 				B18C3D4D206122C200C779E1 /* MenuController.swift in Sources */,
 				849F857A206E615D008DCA14 /* TraitementAskerController.swift in Sources */,
 				0B9B1E22206795E900601E50 /* SpecialityDAO.swift in Sources */,
@@ -461,6 +468,7 @@
 				0BCB2CEE207129B70079F9DA /* Dose.swift in Sources */,
 				B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */,
 				0BCB2CE82071280A0079F9DA /* TreatmentDAO.swift in Sources */,
+				0B4B971520726E2C00EADE79 /* Exercice.swift in Sources */,
 				0B2870F120678E9200F822B1 /* CoreDataManager.swift in Sources */,
 				0B9B1E242067965A00601E50 /* Speciality.swift in Sources */,
 				849F8572206E58D5008DCA14 /* SupprimerActiviteeController.swift in Sources */,

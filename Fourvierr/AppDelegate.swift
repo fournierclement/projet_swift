@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppointmentDAO.initialize()
         MedecineDAO.initialize()
         TreatmentDAO.initialize()
+        ExerciceDAO.initialize()
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
