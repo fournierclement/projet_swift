@@ -19,22 +19,28 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
     @IBOutlet weak var quantiteTextField: UITextField!
     
     @IBOutlet weak var dateFinTextField: UITextField!
+    let dateFormatter = DateFormatter()
     /////////////
     @IBOutlet weak var traitementPicker: UIPickerView!
     @IBOutlet weak var myTable: UITableView!
     var medecines: [Medecine] = []
-    let heurePrise = ["6h","7h","8h","9h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h","21h","22h"]
-    let switchValue = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+    
+    // Doses can be without those hours and so there is that many switcher
+    let heuresPrises: [String] = Dose.dailyHours
+    var heuresPrisesSwitch: [Bool] = Dose.dailyHours.map { _ in false }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.medecines = MedecineDAO.getAll()!
         self.traitementPicker.delegate = self
         self.traitementPicker.dataSource = self
+        self.dateFormatter.dateFormat = "dd/MM/yyyy"
+        let nextYearDate = Date().addingTimeInterval(60 * 60 * 24 * 365)
+        self.dateFinTextField.text = self.dateFormatter.string(from: nextYearDate)
         createDatePicker()
     }
 
-    
+    // MARK: - Medecine Picker
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -51,15 +57,22 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
     }
+    
+    // MARK: - Table of switch
+    
     public func tableView(_: UITableView, numberOfRowsInSection: Int) -> Int{
-        return heurePrise.count
+        return heuresPrises.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "priseCell", for: indexPath) as! HeureTableCell
         
-        cell.heureText?.text = heurePrise[indexPath.row]
-        cell.switchOnOff?.setOn(switchValue[indexPath.row],animated: false)
+        // MARK: Switch generation
+        
+        cell.heureText?.text = self.heuresPrises[indexPath.row]
+        cell.switchOnOff?.setOn(self.heuresPrisesSwitch[indexPath.row],animated: false)
+        cell.switchOnOff.tag = indexPath.row
+        cell.switchOnOff.addTarget(self, action: #selector(switchHeuresPrises), for: .allTouchEvents)
 
         return cell
     }
@@ -81,11 +94,14 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
         self.navigationController?.isNavigationBarHidden = false
     }
     
+    // MARK: - Functions
     
+    func switchHeuresPrises(sender: UISwitch) {
+        self.heuresPrisesSwitch[sender.tag] = !self.heuresPrisesSwitch[sender.tag]
+    }
     
     let datePickerDebut = UIDatePicker()
     let datePickerFin = UIDatePicker()
-    
     
     func createDatePicker() {
         
@@ -105,11 +121,9 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
         //assigning date picker to text field
         dateFinTextField.inputView = datePickerFin
         
-        
     }
     
     func donePressed() {
-        
         // format date
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
@@ -118,5 +132,33 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
         self.view.endEditing(true)
     }
     
+    func addTreatment() -> Treatment? {
+        let medecine = self.medecines[traitementPicker.selectedRow(inComponent: 0)]
+        let quantity = self.quantiteTextField.text
+        let endDate = dateFormatter.date(from: self.dateFinTextField.text!)
+        let hours = heuresPrises.enumerated().filter {
+                (index, hour) in return self.heuresPrisesSwitch[index]
+            }.map {(index, hour) in return hour }
+        guard !(quantity?.isEmpty)! && hours.count > 0 else {
+            let alert = UIAlertController(title: "champs manquant", message: "Il faut une quantité et au minimum une heure de prise.", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title:"retour", style: .default)
+            alert.addAction(cancelAction)
+            present(alert, animated: true)
+            return nil
+        }
+        return Treatment(medecine: medecine, quantity: quantity!, endDate: endDate!, hours: hours)
+    }
+    
+    // MARK: - Navigation
+    
+    let treatmentValidation = "treatmentValidation"
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if (identifier == self.treatmentValidation) {
+            guard addTreatment() != nil else {
+                return false
+            }
+        }
+        return true
+    }
     
 }

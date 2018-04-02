@@ -16,6 +16,10 @@
 		0B642B6E2067E3200093B028 /* Medecine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B6D2067E3200093B028 /* Medecine.swift */; };
 		0B9B1E22206795E900601E50 /* SpecialityDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B1E21206795E900601E50 /* SpecialityDAO.swift */; };
 		0B9B1E242067965A00601E50 /* Speciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B1E232067965A00601E50 /* Speciality.swift */; };
+		0BCB2CE82071280A0079F9DA /* TreatmentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB2CE72071280A0079F9DA /* TreatmentDAO.swift */; };
+		0BCB2CEA207129170079F9DA /* Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB2CE9207129170079F9DA /* Treatment.swift */; };
+		0BCB2CEC2071296F0079F9DA /* DoseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB2CEB2071296F0079F9DA /* DoseDAO.swift */; };
+		0BCB2CEE207129B70079F9DA /* Dose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB2CED207129B70079F9DA /* Dose.swift */; };
 		46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A76639203AE9FD0026D50D /* AppDelegate.swift */; };
 		46A7663F203AE9FD0026D50D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A7663D203AE9FD0026D50D /* Main.storyboard */; };
 		46A76642203AE9FD0026D50D /* Fourvierr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46A76640203AE9FD0026D50D /* Fourvierr.xcdatamodeld */; };
@@ -82,6 +86,10 @@
 		0B642B6D2067E3200093B028 /* Medecine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medecine.swift; sourceTree = "<group>"; };
 		0B9B1E21206795E900601E50 /* SpecialityDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialityDAO.swift; sourceTree = "<group>"; };
 		0B9B1E232067965A00601E50 /* Speciality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speciality.swift; sourceTree = "<group>"; };
+		0BCB2CE72071280A0079F9DA /* TreatmentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentDAO.swift; sourceTree = "<group>"; };
+		0BCB2CE9207129170079F9DA /* Treatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treatment.swift; sourceTree = "<group>"; };
+		0BCB2CEB2071296F0079F9DA /* DoseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseDAO.swift; sourceTree = "<group>"; };
+		0BCB2CED207129B70079F9DA /* Dose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dose.swift; sourceTree = "<group>"; };
 		46A76636203AE9FD0026D50D /* Fourviere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fourviere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A76639203AE9FD0026D50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46A7663E203AE9FD0026D50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +175,8 @@
 				0B9B1E232067965A00601E50 /* Speciality.swift */,
 				0B642B692067CDD80093B028 /* Appointment.swift */,
 				0B642B6D2067E3200093B028 /* Medecine.swift */,
+				0BCB2CE9207129170079F9DA /* Treatment.swift */,
+				0BCB2CED207129B70079F9DA /* Dose.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +188,8 @@
 				0B2870EE20678E7300F822B1 /* DoctorDAO.swift */,
 				0B9B1E21206795E900601E50 /* SpecialityDAO.swift */,
 				0B642B6B2067E2230093B028 /* MedecineDAO.swift */,
+				0BCB2CE72071280A0079F9DA /* TreatmentDAO.swift */,
+				0BCB2CEB2071296F0079F9DA /* DoseDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -435,6 +447,8 @@
 				849F857A206E615D008DCA14 /* TraitementAskerController.swift in Sources */,
 				0B9B1E22206795E900601E50 /* SpecialityDAO.swift in Sources */,
 				0B2870EC2067865700F822B1 /* Doctor.swift in Sources */,
+				0BCB2CEC2071296F0079F9DA /* DoseDAO.swift in Sources */,
+				0BCB2CEA207129170079F9DA /* Treatment.swift in Sources */,
 				849F8574206E5A8D008DCA14 /* SupprimerTraitementController.swift in Sources */,
 				849F8576206E5EB4008DCA14 /* AjoutActiviteeController.swift in Sources */,
 				84DAC6B2206A84C900511F0E /* BravoController.swift in Sources */,
@@ -444,7 +458,9 @@
 				B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */,
 				84DAC6AE206A82C800511F0E /* VoirMedecinController.swift in Sources */,
 				B1BF5E562062965200BB1390 /* AjoutMedecinController.swift in Sources */,
+				0BCB2CEE207129B70079F9DA /* Dose.swift in Sources */,
 				B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */,
+				0BCB2CE82071280A0079F9DA /* TreatmentDAO.swift in Sources */,
 				0B2870F120678E9200F822B1 /* CoreDataManager.swift in Sources */,
 				0B9B1E242067965A00601E50 /* Speciality.swift in Sources */,
 				849F8572206E58D5008DCA14 /* SupprimerActiviteeController.swift in Sources */,

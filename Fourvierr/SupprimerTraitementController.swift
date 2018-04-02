@@ -11,16 +11,19 @@ import UIKit
 class TraitementCell: UITableViewCell{
 
     @IBOutlet weak var nomLabel: UILabel!
+    @IBOutlet weak var quantiteLabel: UILabel!
+    @IBOutlet weak var frequenceLabel: UILabel!
+
 }
 class SupprimerTraitementController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var myTable: UITableView!
-    var appointments : [Appointment] = []
+    var treatments : [Treatment] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.appointments = AppointmentDAO.getAll()!
+        self.treatments = TreatmentDAO.getAll()!
         setUIEffects()
         // Do any additional setup after loading the view.
     }
@@ -32,13 +35,14 @@ class SupprimerTraitementController: UIViewController, UITableViewDelegate, UITa
     
     
     public func tableView(_: UITableView, numberOfRowsInSection: Int) -> Int{
-        return self.appointments.count
+        return self.treatments.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "traitCell", for: indexPath) as! TraitementCell
-        
-        cell.nomLabel?.text = appointments[indexPath.row].doctor.toString
+        cell.nomLabel?.text = treatments[indexPath.row].medecine
+        cell.quantiteLabel?.text = treatments[indexPath.row].quantity
+        cell.frequenceLabel?.text = treatments[indexPath.row].frequency
         return cell
     }
     
@@ -61,5 +65,15 @@ class SupprimerTraitementController: UIViewController, UITableViewDelegate, UITa
         self.navigationController?.isNavigationBarHidden = false
     }
     
+    public func tableView(_ tableView: UITableView, commit EditingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        // On delete
+        if(EditingStyle == UITableViewCellEditingStyle.delete) {
+            self.myTable.beginUpdates();
+            TreatmentDAO.delete(treatment: treatments[indexPath.row])
+            self.treatments.remove(at: indexPath.row)
+            self.myTable.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            self.myTable.endUpdates()
+        }
+    }
     
 }

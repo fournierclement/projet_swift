@@ -47,10 +47,6 @@ class AjoutMedecinController: UIViewController, UIPickerViewDataSource, UIPicker
         return true
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        <#code#>
-//    }
-    
     // MARK: - Actions & functions
     
     func addDoctor() -> Doctor? {

@@ -19,34 +19,18 @@ class MedocsController: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     
     @IBOutlet weak var myTable: UITableView!
-    let qttTest = ["1 comprimé","2 cuillère", "5 piqure"]
-    let heureTest = ["14h","17h30", "11h"]
-    let nomTest = ["Nespresso to cure my depresso", "Xanax 1000", "Oublipa pills 200"]
-    
+    var doses : [Dose] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUIEffects()
-        // Do any additional setup after loading the view.
+        let now = Date()
+        self.doses = DoseDAO.getDailyDoses().filter({$0.time >= now})
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    
-    public func tableView(_: UITableView, numberOfRowsInSection: Int) -> Int{
-        return nomTest.count
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "medocCell", for: indexPath) as! MedocsTableCell
-        
-        cell.heureLabel?.text = heureTest[indexPath.row]
-        cell.qttLabel?.text = qttTest[indexPath.row]
-        cell.medLabel?.text = nomTest[indexPath.row]
-        return cell
     }
     
     private func setUIEffects(){
@@ -66,5 +50,25 @@ class MedocsController: UIViewController, UITableViewDelegate, UITableViewDataSo
         self.navigationController?.isNavigationBarHidden = true
     }
     
+    // MARK: - Table
+    public func tableView(_: UITableView, numberOfRowsInSection: Int) -> Int{
+        return doses.count
+    }
     
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "medocCell", for: indexPath) as! MedocsTableCell
+        
+        cell.heureLabel?.text = self.doses[indexPath.row].hour
+        cell.qttLabel?.text = self.doses[indexPath.row].quantity
+        cell.medLabel?.text = self.doses[indexPath.row].medecine
+        return cell
+    }
+    
+    // MARK: - Navigation
+    
+    @IBAction func unwindToMedocs(segue: UIStoryboardSegue){
+        let now = Date()
+        self.doses = DoseDAO.getDailyDoses().filter({$0.time >= now})
+        myTable.reloadData()
+    }
 }

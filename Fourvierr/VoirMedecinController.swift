@@ -10,7 +10,6 @@ import UIKit
 
 class VoirMedecinController: UIViewController{
     
-    //Todo les mettre a jour avec les valeurs du medein dont provient le click
     @IBOutlet weak var nomLabel: UILabel!
     @IBOutlet weak var prenomLabel: UILabel!
     @IBOutlet weak var telLabel: UILabel!

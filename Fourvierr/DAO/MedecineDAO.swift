@@ -7,24 +7,6 @@
 //
 
 import Foundation
-//
-//  MedecineDAO.swift
-//  Fourviere
-//
-//  Created by l on 25/03/2018.
-//  Copyright © 2018 polytechIG. All rights reserved.
-//
-
-import Foundation
-//
-//  MedecineDAO.swift
-//  Fourviere
-//
-//  Created by l on 25/03/2018.
-//  Copyright © 2018 polytechIG. All rights reserved.
-//
-
-import Foundation
 import CoreData
 
 class MedecineDAO {
@@ -33,6 +15,7 @@ class MedecineDAO {
     // MARK: - Medecine Initialization
     
     static func initialize () {
+        Medecine(name: "Trowa 100", descriptus: "Madness? THIS IS SPARTAA")
         Medecine(name: "Xanax", descriptus: "Zats something to make you feel goooooooood")
         Medecine(name: "Aspirine", descriptus: "When Billy is too loud")
         Medecine(name: "Magnetisme", descriptus: "Funny stones to feel zen")
