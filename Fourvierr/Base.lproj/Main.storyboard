@@ -652,6 +652,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Médecin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEr-YQ-OPi">
+                                            <rect key="frame" x="158" y="404" width="97.333333333333343" height="31.333333333333314"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="zqS-Bd-zPh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="PEY-8w-4UQ">
                                             <rect key="frame" x="0.0" y="136.33333333333331" width="414" height="248.33333333333331"/>
                                             <date key="date" timeIntervalSinceReferenceDate="543237494.72011304">
@@ -661,12 +670,6 @@
                                         </datePicker>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcb-At-0RS">
                                             <rect key="frame" x="181" y="90" width="53" height="31.333333333333329"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Médecin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEr-YQ-OPi">
-                                            <rect key="frame" x="158.33333333333334" y="404.66666666666669" width="97.333333333333343" height="31.333333333333314"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -1860,7 +1863,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3Fd-Md-oEK">
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3Fd-Md-oEK">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zpn-DV-hbT">
@@ -1946,7 +1949,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rgC-ae-F0a">
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rgC-ae-F0a">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYr-2h-NpQ">
@@ -2319,8 +2322,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taux de réponse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUz-yZ-2WM">
-                                <rect key="frame" x="100" y="335.33333333333331" width="214" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Prise de Médicaments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUz-yZ-2WM" userLabel="Prise de Médicaments">
+                                <rect key="frame" x="68" y="337" width="289" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="qVa-x1-j72"/>
                                 </constraints>
@@ -2357,22 +2360,25 @@
                                     <segment title="J-1"/>
                                 </segments>
                                 <color key="tintColor" red="0.61804318000000003" green="0.93238420050000004" blue="0.37358434800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeJour:" destination="qcv-0O-E4I" eventType="valueChanged" id="UqZ-eb-RJh"/>
+                                </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taux de réponse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-e8-kPO">
-                                <rect key="frame" x="100" y="445.33333333333331" width="214" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="2R1-vt-tEa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkl-ax-BBC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkl-ax-BBC" userLabel="Taux De Diskinesie">
                                 <rect key="frame" x="100" y="475.33333333333331" width="214" height="49.999999999999943"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="K02-AZ-EvS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Taux de Diskinésie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-e8-kPO">
+                                <rect key="frame" x="100" y="447" width="214" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2R1-vt-tEa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2383,10 +2389,10 @@
                             <constraint firstItem="ugl-hr-29q" firstAttribute="leading" secondItem="DMS-BZ-nmv" secondAttribute="leadingMargin" constant="80" id="4qv-aw-cfT"/>
                             <constraint firstAttribute="trailing" secondItem="Ar5-xk-7u6" secondAttribute="trailing" id="6ab-M2-AEm"/>
                             <constraint firstItem="pu2-FH-qqA" firstAttribute="leading" secondItem="DMS-BZ-nmv" secondAttribute="leadingMargin" constant="95" id="8ct-kC-OeR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nUz-yZ-2WM" secondAttribute="trailing" constant="80" id="AWV-bF-M5r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nUz-yZ-2WM" secondAttribute="trailing" constant="40" id="AWV-bF-M5r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pu2-FH-qqA" secondAttribute="trailing" constant="95" id="Crk-Ce-VoK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="072-LL-wyw" secondAttribute="trailing" constant="80" id="DOk-yg-onf"/>
-                            <constraint firstItem="nUz-yZ-2WM" firstAttribute="leading" secondItem="DMS-BZ-nmv" secondAttribute="leadingMargin" constant="80" id="Gsr-7p-LOS"/>
+                            <constraint firstItem="nUz-yZ-2WM" firstAttribute="leading" secondItem="DMS-BZ-nmv" secondAttribute="leadingMargin" constant="40" id="Gsr-7p-LOS"/>
                             <constraint firstItem="kkl-ax-BBC" firstAttribute="top" secondItem="DuY-e8-kPO" secondAttribute="bottom" constant="10" id="Hjk-96-t6q"/>
                             <constraint firstItem="Dzp-iG-7n1" firstAttribute="top" secondItem="yMx-8T-DSv" secondAttribute="bottom" constant="20" id="IZ6-DT-yE5"/>
                             <constraint firstItem="kkl-ax-BBC" firstAttribute="leading" secondItem="DMS-BZ-nmv" secondAttribute="leadingMargin" constant="80" id="MaA-Ap-jbi"/>
@@ -2400,19 +2406,19 @@
                             <constraint firstItem="NmZ-TW-hdR" firstAttribute="top" secondItem="072-LL-wyw" secondAttribute="bottom" constant="10" id="ket-aU-W0V"/>
                             <constraint firstItem="ugl-hr-29q" firstAttribute="top" secondItem="nUz-yZ-2WM" secondAttribute="bottom" constant="10" id="l9N-uG-7lU"/>
                             <constraint firstItem="072-LL-wyw" firstAttribute="leading" secondItem="DMS-BZ-nmv" secondAttribute="leadingMargin" constant="80" id="mmf-iy-s1o"/>
-                            <constraint firstItem="DuY-e8-kPO" firstAttribute="leading" secondItem="DMS-BZ-nmv" secondAttribute="leadingMargin" constant="80" id="n07-Jj-mlj"/>
+                            <constraint firstItem="DuY-e8-kPO" firstAttribute="leading" secondItem="DMS-BZ-nmv" secondAttribute="leadingMargin" constant="40" id="n07-Jj-mlj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kkl-ax-BBC" secondAttribute="trailing" constant="80" id="ogE-MS-8EL"/>
                             <constraint firstItem="Ar5-xk-7u6" firstAttribute="leading" secondItem="DMS-BZ-nmv" secondAttribute="leading" id="sXr-mh-wpb"/>
                             <constraint firstItem="pu2-FH-qqA" firstAttribute="top" secondItem="Dzp-iG-7n1" secondAttribute="bottom" constant="20" id="sYk-pO-JOa"/>
                             <constraint firstItem="NmZ-TW-hdR" firstAttribute="leading" secondItem="DMS-BZ-nmv" secondAttribute="leadingMargin" constant="80" id="tVv-1L-YMM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ugl-hr-29q" secondAttribute="trailing" constant="80" id="uo7-sd-BrA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DuY-e8-kPO" secondAttribute="trailing" constant="80" id="y4q-og-4Or"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DuY-e8-kPO" secondAttribute="trailing" constant="40" id="y4q-og-4Or"/>
                             <constraint firstItem="Dzp-iG-7n1" firstAttribute="centerX" secondItem="DMS-BZ-nmv" secondAttribute="centerX" id="y62-qC-4W9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dateSelector" destination="pu2-FH-qqA" id="CYZ-uU-yvw"/>
-                        <outlet property="tauxDeDisquinesie" destination="kkl-ax-BBC" id="Wpr-SE-1QG"/>
+                        <outlet property="tauxDeDyskinesie" destination="kkl-ax-BBC" id="oAU-LV-1Hv"/>
                         <outlet property="tauxPriseMedoc" destination="ugl-hr-29q" id="pIr-RE-GBI"/>
                         <outlet property="tauxReponse" destination="NmZ-TW-hdR" id="8dS-Yx-WHe"/>
                     </connections>

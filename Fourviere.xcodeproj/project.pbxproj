@@ -10,6 +10,8 @@
 		0B2870EC2067865700F822B1 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2870EB2067865700F822B1 /* Doctor.swift */; };
 		0B2870EF20678E7300F822B1 /* DoctorDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2870EE20678E7300F822B1 /* DoctorDAO.swift */; };
 		0B2870F120678E9200F822B1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2870F020678E9200F822B1 /* CoreDataManager.swift */; };
+		0B31F2062073108400BCE7D6 /* RapportDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B31F2052073108300BCE7D6 /* RapportDAO.swift */; };
+		0B31F208207310C000BCE7D6 /* Rapport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B31F207207310C000BCE7D6 /* Rapport.swift */; };
 		0B4B971520726E2C00EADE79 /* Exercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B971420726E2C00EADE79 /* Exercice.swift */; };
 		0B4B9717207270D600EADE79 /* ExerciceDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B9716207270D600EADE79 /* ExerciceDAO.swift */; };
 		0B642B682067CC290093B028 /* AppointmentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B672067CC290093B028 /* AppointmentDAO.swift */; };
@@ -83,6 +85,8 @@
 		0B2870EB2067865700F822B1 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		0B2870EE20678E7300F822B1 /* DoctorDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorDAO.swift; path = Fourvierr/DAO/DoctorDAO.swift; sourceTree = SOURCE_ROOT; };
 		0B2870F020678E9200F822B1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0B31F2052073108300BCE7D6 /* RapportDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapportDAO.swift; sourceTree = "<group>"; };
+		0B31F207207310C000BCE7D6 /* Rapport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rapport.swift; sourceTree = "<group>"; };
 		0B4B971420726E2C00EADE79 /* Exercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice.swift; sourceTree = "<group>"; };
 		0B4B9716207270D600EADE79 /* ExerciceDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceDAO.swift; sourceTree = "<group>"; };
 		0B642B672067CC290093B028 /* AppointmentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDAO.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 				0BCB2CE9207129170079F9DA /* Treatment.swift */,
 				0BCB2CED207129B70079F9DA /* Dose.swift */,
 				0B4B971420726E2C00EADE79 /* Exercice.swift */,
+				0B31F207207310C000BCE7D6 /* Rapport.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				0BCB2CE72071280A0079F9DA /* TreatmentDAO.swift */,
 				0BCB2CEB2071296F0079F9DA /* DoseDAO.swift */,
 				0B4B9716207270D600EADE79 /* ExerciceDAO.swift */,
+				0B31F2052073108300BCE7D6 /* RapportDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -483,7 +489,9 @@
 				84C25A5E2066934D0060FC7D /* AjoutTraitementController.swift in Sources */,
 				84C25A5620667B4B0060FC7D /* MedocsController.swift in Sources */,
 				849F8578206E6105008DCA14 /* OnOffAskerController.swift in Sources */,
+				0B31F2062073108400BCE7D6 /* RapportDAO.swift in Sources */,
 				0B642B6A2067CDD80093B028 /* Appointment.swift in Sources */,
+				0B31F208207310C000BCE7D6 /* Rapport.swift in Sources */,
 				46A76642203AE9FD0026D50D /* Fourvierr.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
