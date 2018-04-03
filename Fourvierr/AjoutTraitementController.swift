@@ -146,7 +146,11 @@ class AjoutTraitementController: UIViewController, UIPickerViewDataSource, UIPic
             present(alert, animated: true)
             return nil
         }
-        return Treatment(medecine: medecine, quantity: quantity!, endDate: endDate!, hours: hours)
+        let treatment = Treatment(medecine: medecine, quantity: quantity!, endDate: endDate!, hours: hours)
+        for dose in treatment.getDailyDoses {
+            DoseNotif(identifier:"\(dose.hour)-\(treatment.quantity)-\(treatment.medecine)", dose:dose)
+        }
+        return treatment
     }
     
     // MARK: - Navigation

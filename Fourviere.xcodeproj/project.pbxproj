@@ -19,6 +19,11 @@
 		0B642B6C2067E2230093B028 /* MedecineDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B6B2067E2230093B028 /* MedecineDAO.swift */; };
 		0B642B6E2067E3200093B028 /* Medecine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B6D2067E3200093B028 /* Medecine.swift */; };
 		0B68A52520737A4D00FBBC41 /* wallpaper5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B68A52420737A1400FBBC41 /* wallpaper5.jpg */; };
+		0B70FD44207408A900CFA9E0 /* DoseNotif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B70FD43207408A900CFA9E0 /* DoseNotif.swift */; };
+		0B70FD46207411E300CFA9E0 /* DyskinesieNotif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B70FD45207411E300CFA9E0 /* DyskinesieNotif.swift */; };
+		0B7AEE9C20737F0500BD28E6 /* Pusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AEE9B20737F0500BD28E6 /* Pusher.swift */; };
+		0B7AEEA32073B24E00BD28E6 /* AppointmentNotif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AEEA22073B24E00BD28E6 /* AppointmentNotif.swift */; };
+		0B7AEEA52073BC8E00BD28E6 /* AbstractNotif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AEEA42073BC8E00BD28E6 /* AbstractNotif.swift */; };
 		0B7DE20C2072FB3D0081BC69 /* SupprimerMedecinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7DE20B2072FB3D0081BC69 /* SupprimerMedecinController.swift */; };
 		0B9B1E22206795E900601E50 /* SpecialityDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B1E21206795E900601E50 /* SpecialityDAO.swift */; };
 		0B9B1E242067965A00601E50 /* Speciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B1E232067965A00601E50 /* Speciality.swift */; };
@@ -95,6 +100,11 @@
 		0B642B6B2067E2230093B028 /* MedecineDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedecineDAO.swift; sourceTree = "<group>"; };
 		0B642B6D2067E3200093B028 /* Medecine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medecine.swift; sourceTree = "<group>"; };
 		0B68A52420737A1400FBBC41 /* wallpaper5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper5.jpg; sourceTree = SOURCE_ROOT; };
+		0B70FD43207408A900CFA9E0 /* DoseNotif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseNotif.swift; sourceTree = "<group>"; };
+		0B70FD45207411E300CFA9E0 /* DyskinesieNotif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyskinesieNotif.swift; sourceTree = "<group>"; };
+		0B7AEE9B20737F0500BD28E6 /* Pusher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pusher.swift; sourceTree = "<group>"; };
+		0B7AEEA22073B24E00BD28E6 /* AppointmentNotif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentNotif.swift; sourceTree = "<group>"; };
+		0B7AEEA42073BC8E00BD28E6 /* AbstractNotif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractNotif.swift; sourceTree = "<group>"; };
 		0B7DE20B2072FB3D0081BC69 /* SupprimerMedecinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupprimerMedecinController.swift; sourceTree = "<group>"; };
 		0B9B1E21206795E900601E50 /* SpecialityDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialityDAO.swift; sourceTree = "<group>"; };
 		0B9B1E232067965A00601E50 /* Speciality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speciality.swift; sourceTree = "<group>"; };
@@ -180,6 +190,18 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		0B7AEE9D20739FF400BD28E6 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				0B7AEE9B20737F0500BD28E6 /* Pusher.swift */,
+				0B7AEEA22073B24E00BD28E6 /* AppointmentNotif.swift */,
+				0B7AEEA42073BC8E00BD28E6 /* AbstractNotif.swift */,
+				0B70FD43207408A900CFA9E0 /* DoseNotif.swift */,
+				0B70FD45207411E300CFA9E0 /* DyskinesieNotif.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		0BE96F23206120A50088A3AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +255,7 @@
 		46A76638203AE9FD0026D50D /* Fourvierr */ = {
 			isa = PBXGroup;
 			children = (
+				0B7AEE9D20739FF400BD28E6 /* Notifications */,
 				0B2870ED20678DEF00F822B1 /* Utils */,
 				0BE96F2A206121F90088A3AF /* DAO */,
 				0BE96F23206120A50088A3AF /* Model */,
@@ -476,21 +499,26 @@
 				0B642B6E2067E3200093B028 /* Medecine.swift in Sources */,
 				0B642B6C2067E2230093B028 /* MedecineDAO.swift in Sources */,
 				B18C3D4F2061231E00C779E1 /* InfoController.swift in Sources */,
+				0B7AEE9C20737F0500BD28E6 /* Pusher.swift in Sources */,
 				84DAC6AE206A82C800511F0E /* VoirMedecinController.swift in Sources */,
 				B1BF5E562062965200BB1390 /* AjoutMedecinController.swift in Sources */,
 				0BCB2CEE207129B70079F9DA /* Dose.swift in Sources */,
 				B18C3D4B2061197D00C779E1 /* AjoutRDVController.swift in Sources */,
 				0BCB2CE82071280A0079F9DA /* TreatmentDAO.swift in Sources */,
 				0B4B971520726E2C00EADE79 /* Exercice.swift in Sources */,
+				0B7AEEA32073B24E00BD28E6 /* AppointmentNotif.swift in Sources */,
 				0B2870F120678E9200F822B1 /* CoreDataManager.swift in Sources */,
 				0B9B1E242067965A00601E50 /* Speciality.swift in Sources */,
 				849F8572206E58D5008DCA14 /* SupprimerActiviteeController.swift in Sources */,
 				8460923E205BCA41009FC67D /* MesRDVViewController.swift in Sources */,
 				84F9AD67206A4D11003F94A1 /* SportController.swift in Sources */,
 				849F8570206E5753008DCA14 /* RapportController.swift in Sources */,
+				0B70FD44207408A900CFA9E0 /* DoseNotif.swift in Sources */,
+				0B70FD46207411E300CFA9E0 /* DyskinesieNotif.swift in Sources */,
 				46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */,
 				0B7DE20C2072FB3D0081BC69 /* SupprimerMedecinController.swift in Sources */,
 				84C25A5E2066934D0060FC7D /* AjoutTraitementController.swift in Sources */,
+				0B7AEEA52073BC8E00BD28E6 /* AbstractNotif.swift in Sources */,
 				84C25A5620667B4B0060FC7D /* MedocsController.swift in Sources */,
 				849F8578206E6105008DCA14 /* OnOffAskerController.swift in Sources */,
 				0B31F2062073108400BCE7D6 /* RapportDAO.swift in Sources */,

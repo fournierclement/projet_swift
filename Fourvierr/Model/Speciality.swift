@@ -9,6 +9,8 @@
 import Foundation
 
 class Speciality {
+    static let neurologue = "Neurologue"
+    
     internal let dto : SpecialityDTO
     internal init(dto: SpecialityDTO){
         self.dto = dto

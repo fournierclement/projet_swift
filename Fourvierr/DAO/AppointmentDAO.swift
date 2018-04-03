@@ -26,7 +26,6 @@ class AppointmentDAO {
             let appointments = try CoreDataManager.context.fetch(request) as [AppointmentDTO]
             guard appointments.count > 0 else { return nil }
             return appointments[0]
-            
         }
         catch let error as NSError{
             fatalError(error.description)
@@ -37,6 +36,7 @@ class AppointmentDAO {
         let dto = AppointmentDTO(context: CoreDataManager.context);
         dto.date = date as NSDate
         dto.setValue(doctor.dto, forKey: "to_Meet")
+        CoreDataManager.save()
         return dto
     }
     
@@ -55,5 +55,6 @@ class AppointmentDAO {
     
     static func delete(appointment: Appointment){
         CoreDataManager.context.delete(appointment.dto)
+        CoreDataManager.save()
     }
 }

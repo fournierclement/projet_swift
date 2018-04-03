@@ -27,7 +27,6 @@ class DoctorDAO {
             let doctors = try CoreDataManager.context.fetch(request) as [DoctorDTO]
             guard doctors.count > 0 else { return nil }
             return doctors[0]
-            
         }
         catch let error as NSError{
             fatalError(error.description)
@@ -41,6 +40,8 @@ class DoctorDAO {
         dto.firstName = firstName
         dto.address = address
         dto.phoneNumber = phoneNumber
+        
+        CoreDataManager.save()
         return dto
     }
     
@@ -59,5 +60,6 @@ class DoctorDAO {
     }
     static func delete(doctor: Doctor){
         CoreDataManager.context.delete(doctor.dto)
+        CoreDataManager.save()
     }
 }

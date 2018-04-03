@@ -69,7 +69,11 @@ class SupprimerTraitementController: UIViewController, UITableViewDelegate, UITa
         // On delete
         if(EditingStyle == UITableViewCellEditingStyle.delete) {
             self.myTable.beginUpdates();
-            TreatmentDAO.delete(treatment: treatments[indexPath.row])
+            let treatment = treatments[indexPath.row]
+            for dose in  treatment.getDailyDoses {
+                Pusher.delete(identifier: "\(dose.hour)-\(treatment.quantity)-\(treatment.medecine)")
+            }
+            TreatmentDAO.delete(treatment: treatment)
             self.treatments.remove(at: indexPath.row)
             self.myTable.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
             self.myTable.endUpdates()

@@ -55,6 +55,8 @@ class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         self.navigationController?.isNavigationBarHidden = true
+        self.appointments = AppointmentDAO.getAll()!
+        myTable.reloadData()
     }
     
     // MARK: - Table View func
@@ -90,8 +92,7 @@ class MesRDVViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: - Nagivation
     
     @IBAction func unwindToRDV(segue:UIStoryboardSegue) {
-        self.appointments = AppointmentDAO.getAll()!
-        myTable.reloadData()
+
     }
     
     let detailsAppointment = "detailsAppointment"

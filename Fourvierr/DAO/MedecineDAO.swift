@@ -41,6 +41,7 @@ class MedecineDAO {
         let dto = MedecineDTO(context: CoreDataManager.context)
         dto.name = name
         dto.descriptus = descriptus
+        CoreDataManager.save()
         return dto
     }
     

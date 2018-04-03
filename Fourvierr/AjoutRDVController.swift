@@ -35,6 +35,7 @@ class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == appointmentValidationSegue {
+            guard doctors.first != nil else { return false }
             guard (addAppointment() != nil) else {
                 return false
             }
@@ -52,7 +53,9 @@ class AjoutRDVController: UIViewController, UIPickerViewDataSource, UIPickerView
     func addAppointment() -> Appointment? {
         let date = datePicker.date
         let doctor = doctors[medecinPicker.selectedRow(inComponent: 0)]
-        return Appointment(date: date, doctor: doctor)
+        let appointment = Appointment(date: date, doctor: doctor)
+        AppointmentNotif(identifier: appointment.toString, appointment: appointment)
+        return appointment
     }
     
     // MARK: - Picker functions

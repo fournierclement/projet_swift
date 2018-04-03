@@ -40,6 +40,7 @@ class TreatmentDAO {
         dto.quantity = quantity
         dto.endDate = endDate as NSDate
         dto.hours = Set<String>(hours.map {$0})
+        CoreDataManager.save()
         return dto
     }
     
@@ -57,5 +58,6 @@ class TreatmentDAO {
     }
     static func delete(treatment: Treatment){
         CoreDataManager.context.delete(treatment.dto)
+        CoreDataManager.save()
     }
 }

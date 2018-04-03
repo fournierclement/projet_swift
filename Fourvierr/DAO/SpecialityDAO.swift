@@ -39,6 +39,7 @@ class SpecialityDAO {
     static func create (label: String) -> SpecialityDTO {
         let dto = SpecialityDTO(context: CoreDataManager.context)
         dto.label = label
+        CoreDataManager.save()
         return dto
     }
     

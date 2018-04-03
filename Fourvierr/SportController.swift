@@ -64,13 +64,24 @@ class SportController: UIViewController, UITableViewDelegate, UITableViewDataSou
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         self.navigationController?.isNavigationBarHidden = true
+        self.exercices = ExerciceDAO.getTodayExercices()!
+        self.myTable.reloadData()
     }
     
     // MARK: - Navigation
     
+    
+    let isExerciceDone = "isExerciceDone"
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == self.isExerciceDone)    {
+            if let indexPath = self.myTable.indexPathForSelectedRow {
+                let setExerciceDone = segue.destination as! ValiderActiviteController
+                setExerciceDone.exercice = self.exercices[indexPath.row]
+            }
+        }
+    }
+    
     @IBAction func unwindToExercices(segue:UIStoryboardSegue) {
-        self.exercices = ExerciceDAO.getTodayExercices()!
-        self.myTable.reloadData()
     }
     
 }

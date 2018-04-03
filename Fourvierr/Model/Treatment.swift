@@ -39,7 +39,7 @@ class Treatment {
     var frequency: String {
         return "\(self.hours.count)/jour"
     }
-    
+
     var getDailyDoses: [Dose]{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"

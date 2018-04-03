@@ -14,6 +14,7 @@
     </entity>
     <entity name="ExerciceDTO" representedClassName="ExerciceDTO" syncable="YES" codeGenerationType="class">
         <attribute name="entitled" attributeType="String" syncable="YES"/>
+        <attribute name="lastDone" optional="YES" attributeType="Transformable" customClassName="Date" syncable="YES"/>
         <attribute name="workingDays" attributeType="Transformable" customClassName="Set&lt;String&gt;" syncable="YES"/>
     </entity>
     <entity name="MedecineDTO" representedClassName="MedecineDTO" syncable="YES" codeGenerationType="class">
@@ -35,10 +36,10 @@
     <elements>
         <element name="AppointmentDTO" positionX="1674" positionY="-3673" width="128" height="73"/>
         <element name="DoctorDTO" positionX="1872" positionY="-3672" width="117" height="133"/>
+        <element name="ExerciceDTO" positionX="1879" positionY="-3385" width="128" height="28"/>
         <element name="MedecineDTO" positionX="1917" positionY="-3514" width="128" height="88"/>
+        <element name="RapportDTO" positionX="2041" positionY="-3366" width="128" height="43"/>
         <element name="SpecialityDTO" positionX="2086" positionY="-3745" width="128" height="73"/>
         <element name="TreatmentDTO" positionX="1717" positionY="-3526" width="128" height="103"/>
-        <element name="ExerciceDTO" positionX="1872" positionY="-3372" width="128" height="73"/>
-        <element name="RapportDTO" positionX="2041" positionY="-3366" width="128" height="43"/>
     </elements>
 </model>

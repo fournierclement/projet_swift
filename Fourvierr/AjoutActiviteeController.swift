@@ -30,8 +30,10 @@ class AjoutActiviteeController: UIViewController, UIPickerViewDataSource, UIPick
         self.exercicePicker.delegate = self
         self.exercicePicker.dataSource = self
         self.pickerData = ExerciceDAO.getAll()!
-        self.selectedExercice = pickerData[0]
-        self.joursExercicesSwitch = self.joursExercices.map{self.selectedExercice!.mustWork(this: $0)}
+        self.selectedExercice = pickerData.first
+        if self.selectedExercice != nil {
+            self.joursExercicesSwitch = self.joursExercices.map{self.selectedExercice!.mustWork(this: $0)}
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -92,6 +94,7 @@ class AjoutActiviteeController: UIViewController, UIPickerViewDataSource, UIPick
     
     func doSwitch(sender: UISwitch) {
         // If + so the day was already here
+        guard self.selectedExercice != nil else { return }
         if (self.joursExercicesSwitch[sender.tag]) {
             self.selectedExercice!.removeWorkingDay(day: joursExercices[sender.tag])
         } else {

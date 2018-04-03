@@ -8,22 +8,40 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     private func initializeData(){
+        // Library types
         SpecialityDAO.initialize()
-        DoctorDAO.initialize()
-        AppointmentDAO.initialize()
         MedecineDAO.initialize()
-        TreatmentDAO.initialize()
-        ExerciceDAO.initialize()
+        
+        // Manageable types
+//        DoctorDAO.initialize()
+//        AppointmentDAO.initialize()
+//        TreatmentDAO.initialize()
+//        ExerciceDAO.initialize()
+    }
+    
+    private func initAuthorization(){
+        let options: UNAuthorizationOptions = [.alert, .sound, .badge, .carPlay]
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: options) {
+            (granted, error) in
+            if !granted {
+                print("Something went wrong")
+            }
+        }
+        center.setNotificationCategories([Pusher.dyskCategory, Pusher.treatCategory])
+        center.delegate = Pusher()
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.initAuthorization()
         self.initializeData()
         return true
     }

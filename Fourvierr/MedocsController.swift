@@ -48,6 +48,9 @@ class MedocsController: UIViewController, UITableViewDelegate, UITableViewDataSo
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         self.navigationController?.isNavigationBarHidden = true
+        let now = Date()
+        self.doses = DoseDAO.getDailyDoses().filter({$0.time >= now})
+        myTable.reloadData()
     }
     
     // MARK: - Table
@@ -67,8 +70,5 @@ class MedocsController: UIViewController, UITableViewDelegate, UITableViewDataSo
     // MARK: - Navigation
     
     @IBAction func unwindToMedocs(segue: UIStoryboardSegue){
-        let now = Date()
-        self.doses = DoseDAO.getDailyDoses().filter({$0.time >= now})
-        myTable.reloadData()
     }
 }

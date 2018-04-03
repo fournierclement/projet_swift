@@ -38,15 +38,28 @@ class ExerciceDAO {
         let dto = ExerciceDTO(context: CoreDataManager.context)
         dto.entitled = entitled
         dto.workingDays = []
+        CoreDataManager.save()
         return dto
     }
     
     static func add(me: Exercice, workingDay: String) {
         me.dto.workingDays?.insert(workingDay)
+        CoreDataManager.save()
     }
     static func remove(me: Exercice, workingDay: String) {
         me.dto.workingDays?.remove(workingDay)
+        CoreDataManager.save()
     }
+    static func setDone(exercice: Exercice) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy:MM:dd:"
+        let todayString = dateFormatter.string(from: Date())
+        dateFormatter.dateFormat = "yyyy:MM:dd:HH:mm:ss"
+        let tonightDate = dateFormatter.date(from: todayString + "23:59:59")!
+        exercice.dto.lastDone = tonightDate
+        CoreDataManager.save()
+    }
+    
     
     static func getAll() -> [Exercice]? {
         self.request.predicate = nil
@@ -63,12 +76,12 @@ class ExerciceDAO {
     
     static func getTodayExercices() -> [Exercice]? {
         
-        self.request.predicate = nil //NSPredicate(format: "workingDays contains %@", )
+        self.request.predicate = nil
         let sort = NSSortDescriptor(key:"entitled", ascending: true)
         self.request.sortDescriptors = [sort]
         do{
             let exercicesDTO = try CoreDataManager.context.fetch(self.request)
-            return exercicesDTO.map { Exercice(dto:$0)}
+            return exercicesDTO.map { Exercice(dto:$0)} .filter { $0.toDo() }
         }
         catch{
             return []
@@ -77,6 +90,7 @@ class ExerciceDAO {
     
     static func delete(exercice: Exercice){
         CoreDataManager.context.delete(exercice.dto)
+        CoreDataManager.save()
     }
 }
 

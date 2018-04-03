@@ -33,7 +33,8 @@ class VoirMedecinController: UIViewController{
             if let doctor = self.appointment?.doctor {
                 self.nomLabel.text = doctor.lastName
                 self.prenomLabel.text = doctor.firstName!
-                self.telLabel.text = doctor.address!
+                self.telLabel.text = doctor.phoneNumber!
+                self.adresseLabel.text = doctor.address!
                 self.speLabel.text = doctor.speciality!
             }
         }
