@@ -16,6 +16,7 @@
 		0B642B6A2067CDD80093B028 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B692067CDD80093B028 /* Appointment.swift */; };
 		0B642B6C2067E2230093B028 /* MedecineDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B6B2067E2230093B028 /* MedecineDAO.swift */; };
 		0B642B6E2067E3200093B028 /* Medecine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B6D2067E3200093B028 /* Medecine.swift */; };
+		0B7DE20C2072FB3D0081BC69 /* SupprimerMedecinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7DE20B2072FB3D0081BC69 /* SupprimerMedecinController.swift */; };
 		0B9B1E22206795E900601E50 /* SpecialityDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B1E21206795E900601E50 /* SpecialityDAO.swift */; };
 		0B9B1E242067965A00601E50 /* Speciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B1E232067965A00601E50 /* Speciality.swift */; };
 		0BCB2CE82071280A0079F9DA /* TreatmentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB2CE72071280A0079F9DA /* TreatmentDAO.swift */; };
@@ -88,6 +89,7 @@
 		0B642B692067CDD80093B028 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		0B642B6B2067E2230093B028 /* MedecineDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedecineDAO.swift; sourceTree = "<group>"; };
 		0B642B6D2067E3200093B028 /* Medecine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medecine.swift; sourceTree = "<group>"; };
+		0B7DE20B2072FB3D0081BC69 /* SupprimerMedecinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupprimerMedecinController.swift; sourceTree = "<group>"; };
 		0B9B1E21206795E900601E50 /* SpecialityDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialityDAO.swift; sourceTree = "<group>"; };
 		0B9B1E232067965A00601E50 /* Speciality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speciality.swift; sourceTree = "<group>"; };
 		0BCB2CE72071280A0079F9DA /* TreatmentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentDAO.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				849F856F206E5753008DCA14 /* RapportController.swift */,
 				84F9AD66206A4D11003F94A1 /* SportController.swift */,
 				849F8571206E58D5008DCA14 /* SupprimerActiviteeController.swift */,
+				0B7DE20B2072FB3D0081BC69 /* SupprimerMedecinController.swift */,
 				849F8573206E5A8D008DCA14 /* SupprimerTraitementController.swift */,
 				849F8579206E615D008DCA14 /* TraitementAskerController.swift */,
 				84DAC6AF206A842900511F0E /* ValiderActiviteController.swift */,
@@ -476,6 +479,7 @@
 				84F9AD67206A4D11003F94A1 /* SportController.swift in Sources */,
 				849F8570206E5753008DCA14 /* RapportController.swift in Sources */,
 				46A7663A203AE9FD0026D50D /* AppDelegate.swift in Sources */,
+				0B7DE20C2072FB3D0081BC69 /* SupprimerMedecinController.swift in Sources */,
 				84C25A5E2066934D0060FC7D /* AjoutTraitementController.swift in Sources */,
 				84C25A5620667B4B0060FC7D /* MedocsController.swift in Sources */,
 				849F8578206E6105008DCA14 /* OnOffAskerController.swift in Sources */,

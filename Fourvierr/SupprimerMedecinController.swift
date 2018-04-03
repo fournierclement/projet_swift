@@ -1,27 +1,31 @@
 //
-//  MesRDVViewController.swift
+//  SupprimerMedecinController.swift
 //  Fourviere
 //
-//  Created by Admin on 16/03/2018.
+//  Created by l on 03/04/2018.
 //  Copyright © 2018 polytechIG. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ActiviteeCell: UITableViewCell{
+class MedecinCell: UITableViewCell{
     
     @IBOutlet weak var nomLabel: UILabel!
+    @IBOutlet weak var prenomLabel: UILabel!
+    @IBOutlet weak var speLabel: UILabel!
+
 }
-class SupprimerActiviteeController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SupprimerMedecinController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTable: UITableView!
     
-    var exercices : [Exercice] = []
+    var doctors : [Doctor] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.exercices = ExerciceDAO.getAll()!
+        self.doctors = DoctorDAO.getAll()!
         setUIEffects()
         // Do any additional setup after loading the view.
     }
@@ -33,13 +37,14 @@ class SupprimerActiviteeController: UIViewController, UITableViewDelegate, UITab
     
     
     public func tableView(_: UITableView, numberOfRowsInSection: Int) -> Int{
-        return self.exercices.count
+        return self.doctors.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "actCell", for: indexPath) as! ActiviteeCell
-        
-        cell.nomLabel?.text = exercices[indexPath.row].toString
+        let cell = tableView.dequeueReusableCell(withIdentifier: "medecinCell", for: indexPath) as! MedecinCell
+        cell.nomLabel?.text = doctors[indexPath.row].lastName
+        cell.prenomLabel?.text = doctors[indexPath.row].firstName
+        cell.speLabel?.text = doctors[indexPath.row].speciality
         return cell
     }
     
@@ -66,10 +71,11 @@ class SupprimerActiviteeController: UIViewController, UITableViewDelegate, UITab
         // On delete
         if(EditingStyle == UITableViewCellEditingStyle.delete) {
             self.myTable.beginUpdates();
-            ExerciceDAO.delete(exercice: exercices[indexPath.row])
-            self.exercices.remove(at: indexPath.row)
+            DoctorDAO.delete(doctor: doctors[indexPath.row])
+            self.doctors.remove(at: indexPath.row)
             self.myTable.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
             self.myTable.endUpdates()
         }
     }
+    
 }

@@ -74,5 +74,9 @@ class ExerciceDAO {
             return []
         }
     }
+    
+    static func delete(exercice: Exercice){
+        CoreDataManager.context.delete(exercice.dto)
+    }
 }
 

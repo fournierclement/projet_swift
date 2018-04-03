@@ -57,4 +57,7 @@ class DoctorDAO {
             return []
         }
     }
+    static func delete(doctor: Doctor){
+        CoreDataManager.context.delete(doctor.dto)
+    }
 }
